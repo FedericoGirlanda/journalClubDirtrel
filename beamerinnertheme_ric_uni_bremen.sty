@@ -1,0 +1,496 @@
+% Copyright 2007 by Till Tantau
+%
+% This file may be distributed and/or modified
+%
+% 1. under the LaTeX Project Public License and/or
+% 2. under the GNU Public License.
+%
+% See the file doc/licenses/LICENSE for more details.
+
+%\ProvidesPackageRCS $Header: /cvsroot/latex-beamer/latex-beamer/themes/inner/beamerinnerthemephbaer.sty,v 1.20 2007/01/28 20:48:30 tantau Exp $
+
+\DeclareOptionBeamer{shadow}[true]{\def\beamer@themerounded@shadow{#1}}
+\ExecuteOptionsBeamer{shadow=true}
+\ProcessOptionsBeamer
+
+\mode<presentation>
+
+%\setbeamertemplate{blocks}[rounded][shadow=\beamer@themerounded@shadow]
+\setbeamertemplate{blocks}[rounded][shadow=\beamer@themerounded@shadow]
+
+%% somehow the size commands are not activated : 
+\setbeamerfont{title}{size=\normalsize}
+\setbeamerfont{subtitle}{size=\footnotesize}
+\setbeamerfont{author}{size=\footnotesize}
+\setbeamerfont{institute}{size=\footnotesize}
+
+\setbeamertemplate{title page}[default][colsep=-4bp,rounded=true,shadow=\beamer@themerounded@shadow]
+\setbeamertemplate{part page}[default][colsep=-4bp,rounded=true,shadow=\beamer@themerounded@shadow]
+
+% Some images:
+
+\pgfdeclareimage[width=14pt,height=12pt]{beamericonbook}{beamericonbook}
+\pgfdeclareimage[width=14pt,height=12pt]{beamericonbookshaded}{beamericonbook.20}
+\pgfaliasimage{beamericonbook.!20opaque}{beamericonbookshaded}
+\pgfaliasimage{beamericonbook.!15opaque}{beamericonbookshaded}
+\pgfaliasimage{beamericonbook.!10opaque}{beamericonbookshaded}
+\pgfaliasimage{beamericonbook.!5opaque}{beamericonbookshaded}
+\pgfaliasimage{beamericonbook.!2opaque}{beamericonbookshaded}
+\pgfdeclareimage[width=11pt,height=14pt]{beamericonarticle}{beamericonarticle}
+\pgfdeclareimage[width=11pt,height=14pt]{beamericonarticleshaded}{beamericonarticle.20}
+\pgfaliasimage{beamericonarticle.!20opaque}{beamericonarticleshaded}
+\pgfaliasimage{beamericonarticle.!15opaque}{beamericonarticleshaded}
+\pgfaliasimage{beamericonarticle.!10opaque}{beamericonarticleshaded}
+\pgfaliasimage{beamericonarticle.!5opaque}{beamericonarticleshaded}
+\pgfaliasimage{beamericonarticle.!2opaque}{beamericonarticleshaded}
+
+% Title page: phbaer
+
+\defbeamertemplate*{title page}{phbaer}[1][]
+{
+  \begin{centering}
+\vspace*{0.5cm}
+%% THE TITLE ITSELF start
+  \begin{beamercolorbox}[sep=8pt,center,ignorebg,#1]{title}
+     \usebeamerfont{title}{\Large\inserttitle} 
+      \par%
+      \vspace{0.1cm}
+     \ifx\insertsubtitle\@empty%
+     \else%
+       \vskip0.5em%
+       {\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}{\normalsize\insertsubtitle}\par}%
+     \fi%     
+             
+   \end{beamercolorbox}%
+
+    \vskip0.3cm
+    \begin{beamercolorbox}[wd=\paperwidth,center]{institute}
+        \includegraphics[height=20ex]{figures/interplay.pdf}%
+            \vskip0.4cm
+    \end{beamercolorbox}
+
+    \begin{beamercolorbox}[sep=8pt,center,#1]{date}
+	{\vspace{3.5cm}\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}{\small\insertauthor}\par\vspace{-4cm}}%
+	\end{beamercolorbox}\vskip0.5em
+
+%% THE TITLE ITSELF end
+%% IMAGE CONSTRUCTION start 
+%     \begin{beamercolorbox}[wd=\paperwidth]{}
+%       \begin{beamercolorbox}[right,rightskip=.3cm,ht=4cm,wd=.599\paperwidth,#1]{logo}
+%         \includegraphics[width=.4\paperwidth]{figures/capio-logo-20110207.pdf}\\[-3mm]
+%         {\tiny\color{capiolightgray}Upper-Body Exoskeleton for Teleoperation\,}\vskip6mm
+%       \end{beamercolorbox}%
+%       \begin{beamercolorbox}[leftskip=.6cm,wd=2em,ht=2cm]{}
+%       \begin{tikzpicture}
+%         \draw[line width=1pt,capiolightgray] (0,0) -- (0,-2.3);
+%       \end{tikzpicture}
+%       \end{beamercolorbox}%
+%       \begin{beamercolorbox}[left,leftskip=.3cm,ht=4cm,wd=.4\paperwidth,#1]{author}%
+%       \flushleft
+%       {\bfseries\usebeamerfont{author}\insertauthor}\\[.75ex]
+%       \end{beamercolorbox}
+%     \end{beamercolorbox}
+%% IMAGE CONSTRUCTION end
+    % \vskip2cm
+    \vskip0.26cm
+    \begin{beamercolorbox}[wd=\paperwidth,center]{institute}
+        \usebeamerfont{institute}\insertinstitute\par
+            \vskip0.3cm
+        \includegraphics[height=4ex]{figures/Logo_Underactuated_Lab_Final.pdf}%
+    \end{beamercolorbox}
+
+     \vskip1em\par
+%     \begin{beamercolorbox}[sep=8pt,center,#1]{date}
+%       {\usebeamerfont{date}\usebeamercolor[fg]{subtitle}{\normalsize\insertdate}\par}%
+%     \end{beamercolorbox}\vskip0.5em
+    {\usebeamercolor[fg]{titlegraphic}\inserttitlegraphic\par}
+  \end{centering}
+}
+
+
+% TITLEs 
+% 
+% \defbeamertemplate*{frametitle}{phbaer}{
+%     \vskip-3.30em%
+%     \hskip-1.3em{\color{black!30!pbgrey}\mdseries\footnotesize\insertsubsection}\\
+%     \vskip-.3em%
+%     \hskip-1.3em\insertframetitle%
+%     \vskip1.5em%
+% }
+
+% % % % \defbeamertemplate*{frametitle}{phbaer}{
+% % % %     \vskip-3.35em%
+% % % %     \hskip-1.3em{\color{black!30!pbgrey}\mdseries\scriptsize\insertsubsection}\\
+% % % %     \vskip-.15em%
+% % % %     \hskip-1.3em\large\insertframetitle%
+% % % %     \vskip1.5em%
+% % % % }
+
+
+% FROM THE BEAMER USER GUIDE : 
+% 
+% The height of the headline and footline templates is calculated automatically. This is done by typeset-
+% ting the templates and then “having a look” at their heights. This recalculation is done right at the
+% beginning of the document, after all packages have been loaded and even after these have executed
+% their \AtBeginDocument initialization.
+
+
+\defbeamertemplate*{frametitle}{phbaer}{
+    \vskip-3.35em%
+    % \vskip-3.9em%
+    % \vskip-5.3em%
+    % \hskip-1.3em{\color{black!30!pbgrey}\mdseries\scriptsize\insertsubsection}\\
+    \hskip-0.25em{\color{black!30!pbgrey}\mdseries\scriptsize\insertsubsection}\\
+    % \vskip-.15em%
+    \vskip-.15em%
+    % \hskip-1.3em\large\insertframetitle%
+    \hskip+0.0em\large\insertframetitle%
+    \vskip1.5em%
+}
+
+% Part page: phbaer
+
+\defbeamertemplate*{part page}{phbaer}[1][]
+{
+  \begin{centering}
+    {\usebeamerfont{part name}\usebeamercolor[fg]{part name}\partname~\insertromanpartnumber}
+    \vskip1em\par
+    \begin{beamercolorbox}[sep=8pt,center,#1]{part title}
+      \usebeamerfont{part title}\insertpart\par
+    \end{beamercolorbox}
+  \end{centering}
+} 
+
+
+
+\newcommand{\structpartshort}[1]{%
+  \vskip5.5cm
+  {\color{capiogray}\huge\sffamily #1}}
+
+\newcommand{\structpart}[2]{%
+  \vskip5.5cm
+  {\color{capiogray}\huge #1}{\color{capiolightgray}\huge\textbf{ | }#2}}
+
+\newcommand{\structpartverbose}[3]{%
+  \vskip5.5cm
+  {\color{capiogray}\huge #1}{\color{capiolightgray}\huge\textbf{ | }#2}\\[-.1em]
+  {\color{capiogray}\emph{\tiny Workpackages #3}}}
+
+\newcommand{\running}[1]{{\color{capiogray}#1}}
+\newcommand{\done}[1]{{\color{capiogray}\sout{#1}}}
+\newcommand{\scheduled}[1]{{\color{capiolightgray}#1}}
+%
+% Table of contents
+%
+
+%\defbeamertemplateparent{sections/subsections in toc}{section in toc,subsection in toc,subsubsection in toc}
+%{}
+
+%\defbeamertemplateparent{sections/subsections in toc shaded}{section in toc shaded,subsection in toc shaded,subsubsection in toc shaded}[1][20]
+%{[#1]}
+
+
+
+
+% (sub-)section in toc: phbaer
+
+\defbeamertemplate*{section in toc}{phbaer}
+{\inserttocsection\par}
+
+\defbeamertemplate*{subsection in toc}{phbaer}
+{\leavevmode\leftskip=1.5em\inserttocsubsection\par}
+
+\defbeamertemplate*{subsubsection in toc}{phbaer}
+{\leavevmode\normalsize\usebeamerfont{subsection in toc}\leftskip=3em%
+  \usebeamerfont{subsubsection in toc}\inserttocsubsubsection\par}
+
+
+% (sub-)section in toc shaded, phbaer
+
+\defbeamertemplate*{section in toc shaded}{phbaer}[1][20]
+{\begin{colormixin}{#1!parent.bg}\usebeamertemplate{section in toc}\end{colormixin}\unskip}
+
+\defbeamertemplate*{subsection in toc shaded}{phbaer}[1][20]
+{\begin{colormixin}{#1!parent.bg}\usebeamertemplate{subsection in toc}\end{colormixin}\unskip}
+
+\defbeamertemplate*{subsubsection in toc shaded}{phbaer}[1][20]
+{\begin{colormixin}{#1!parent.bg}\usebeamertemplate{subsubsection in toc}\end{colormixin}\unskip}
+
+
+
+
+
+%
+% Item
+%
+
+%\defbeamertemplateparent{items}{itemize items,enumerate items}
+%{}
+
+
+% Itemize items
+
+%\defbeamertemplateparent{itemize items}{itemize item,itemize subitem,itemize subsubitem}
+%{}
+
+
+% Itemize items, phbaer
+
+\defbeamertemplate*{itemize item}{phbaer}{\scriptsize\raise1.25pt\hbox{\donotcoloroutermaths$\bullet$}}
+\defbeamertemplate*{itemize subitem}{phbaer}{\tiny\raise1.5pt\hbox{\donotcoloroutermaths$\bullet$}}
+\defbeamertemplate*{itemize subsubitem}{phbaer}{\tiny\raise1.5pt\hbox{\donotcoloroutermaths$\bullet$}}
+
+
+% Enumerate items, phbaer
+
+%\defbeamertemplateparent{enumerate items}{enumerate item,enumerate subitem,enumerate subsubitem,enumerate mini}
+%{}
+
+\defbeamertemplate*{enumerate item}{phbaer}{\insertenumlabel.}
+\defbeamertemplate*{enumerate subitem}{phbaer}{\insertenumlabel.\insertsubenumlabel}
+\defbeamertemplate*{enumerate subsubitem}{phbaer}{\insertenumlabel.\insertsubenumlabel.\insertsubsubenumlabel}
+\defbeamertemplate*{enumerate mini template}{phbaer}{\insertenumlabel}
+
+
+% Description item width
+
+\defbeamertemplate*{description item}{phbaer}{\insertdescriptionitem}
+
+
+
+% Itemize/Enumerate body
+
+\defbeamertemplate*{itemize/enumerate body begin}{phbaer}{}
+\defbeamertemplate*{itemize/enumerate body end}{phbaer}{}
+
+\defbeamertemplate*{itemize/enumerate subbody begin}{phbaer}{}
+\defbeamertemplate*{itemize/enumerate subbody end}{phbaer}{}
+
+\defbeamertemplate*{itemize/enumerate subsubbody begin}{phbaer}{}
+\defbeamertemplate*{itemize/enumerate subsubbody end}{phbaer}{}
+
+
+
+% Alerted text
+
+\defbeamertemplate*{alerted text begin}{phbaer}{\setbeamercolor{local structure}{parent=alerted text}}
+
+
+
+% Structured text
+
+% empyt phbaers
+
+
+% Bibliography items
+
+\defbeamertemplate*{bibliography item}{phbaer}
+{\lower3.5pt\hbox{\hskip2pt\pgfuseimage{beamericonarticle}\hskip1pt}}
+
+\defbeamertemplate*{bibliography entry article}{phbaer}{}
+\defbeamertemplate*{bibliography entry title}{phbaer}{\par}
+\defbeamertemplate*{bibliography entry location}{phbaer}{\par}
+\defbeamertemplate*{bibliography entry note}{phbaer}{\par}
+
+
+% Buttons
+
+\newdimen\beamer@dima%
+\newdimen\beamer@dimb%
+
+\defbeamertemplate*{button}{phbaer}
+{%
+  \setbox\beamer@tempbox=\hbox{{\insertbuttontext}}%
+  \ht\beamer@tempbox=6pt%
+  \dp\beamer@tempbox=0pt%
+  \setbox\beamer@tempbox=\vbox{\box\beamer@tempbox\vskip2pt}%
+  \beamer@tempdim=\wd\beamer@tempbox%
+  \beamer@dima=\beamer@tempdim\advance\beamer@dima by2.2pt
+  \beamer@dimb=\beamer@tempdim\advance\beamer@dimb by4pt
+  \begin{pgfpicture}{-4pt}{0pt}{\the\beamer@tempdim}{8pt}
+    \color{bg}
+    \pgfsetlinewidth{0.8pt}
+    \pgfpathqmoveto{0pt}{0pt}
+    \pgfpathqcurveto{-2.2pt}{0pt}{-4pt}{1.8pt}{-4pt}{4pt}
+    \pgfpathqcurveto{-4pt}{6.2pt}{-2.2pt}{8pt}{0pt}{8pt}
+    \pgfpathlineto{\pgfpoint{\the\beamer@tempdim}{8pt}}
+    \pgfpathcurveto%
+    {\pgfpoint{\the\beamer@dima}{8pt}}%
+    {\pgfpoint{\the\beamer@dimb}{6.2pt}}%
+    {\pgfpoint{\the\beamer@dimb}{4pt}}
+    \pgfpathcurveto%
+    {\pgfpoint{\the\beamer@dimb}{1.8pt}}%
+    {\pgfpoint{\the\beamer@dima}{0pt}}%
+    {\pgfpoint{\the\beamer@tempdim}{0pt}}
+    \pgfpathclose
+    \pgfusepathqfill
+    \colorlet{bg}{parent.bg}
+    \usebeamercolor[fg]{button border}
+    \pgfpathqmoveto{0pt}{0pt}
+    \pgfpathqcurveto{-2.2pt}{0pt}{-4pt}{1.8pt}{-4pt}{4pt}
+    \pgfpathqcurveto{-4pt}{6.2pt}{-2.2pt}{8pt}{0pt}{8pt}
+    \pgfpathlineto{\pgfpoint{\the\beamer@tempdim}{8pt}}
+    \pgfpathcurveto%
+    {\pgfpoint{\the\beamer@dima}{8pt}}%
+    {\pgfpoint{\the\beamer@dimb}{6.2pt}}%
+    {\pgfpoint{\the\beamer@dimb}{4pt}}
+    \pgfpathcurveto%
+    {\pgfpoint{\the\beamer@dimb}{1.8pt}}%
+    {\pgfpoint{\the\beamer@dima}{0pt}}%
+    {\pgfpoint{\the\beamer@tempdim}{0pt}}
+    \pgfpathclose
+    \pgfusepathqstroke
+  \end{pgfpicture}%
+  \hskip-\beamer@tempdim%
+  \box\beamer@tempbox%
+  \kern4pt%
+}
+
+
+% Abstract
+
+\defbeamertemplate*{abstract title}{phbaer}
+{%
+  \begin{center}%
+    \abstractname
+  \end{center}%
+}
+
+\defbeamertemplate*{abstract begin}{phbaer}
+{\beamercolorbox[vmode]{abstract}\leftskip2em\rightskip2em plus 1fill\usebeamerfont*{abstract}}
+
+\defbeamertemplate*{abstract end}{phbaer}
+{\medskip\endbeamercolorbox}
+
+
+% Verse
+
+\defbeamertemplate*{verse begin}{phbaer}
+{\beamercolorbox[vmode]{verse}}
+
+\defbeamertemplate*{verse end}{phbaer}
+{\endbeamercolorbox}
+
+
+% Quotation
+
+\defbeamertemplate*{quotation begin}{phbaer}
+{\beamercolorbox[vmode]{quotation}}
+
+\defbeamertemplate*{quotation end}{phbaer}
+{\endbeamercolorbox}
+
+
+% Quote
+
+\defbeamertemplate*{quote begin}{phbaer}
+{\beamercolorbox[vmode]{quote}}
+
+\defbeamertemplate*{quote end}{phbaer}
+{\endbeamercolorbox}
+
+
+% Footnotes
+
+\defbeamertemplate*{footnote}{phbaer}
+{
+  \parindent 1em\noindent%
+  \raggedright
+  \hbox to 1.8em{\hfil\insertfootnotemark}\insertfootnotetext\par%
+}
+
+
+% Captions
+
+% % \defbeamertemplate*{caption}{phbaer}
+% % {%
+% %   \raggedright
+% %   {%
+% %     \usebeamercolor[fg]{caption name}%
+% %     \usebeamerfont*{caption name}%
+% %     \insertcaptionname:%
+% %   }
+% %   \insertcaption\par
+% % }
+
+% % BERTI MOD 
+% % 
+\defbeamertemplate*{caption}{phbaer}
+{%
+  % \raggedright
+  % \cenraggedright
+  \justifying
+  {%
+    % \usebeamercolor[fg]{caption name}%
+    % \usebeamerfont*{caption name}%
+    % \insertcaptionname:%
+  }
+  {\usebeamercolor[fg]{caption name} \footnotesize \insertcaption\par }
+}
+
+
+% Blocks
+
+%\defbeamertemplateparent{blocks}{block begin,block end,%
+%  block alerted begin,block alerted end,%
+%  block example begin,block example end}
+%{}
+
+
+% just another block
+% 
+% \definecolor{blocktwo}{cmyk}{0.0,0.0,0.0,0.10}
+% blue!15!gray
+
+\newenvironment<>{blocktwo}[1]
+{%
+  \begin{actionenv}#2%
+    \def\insertblocktitle{#1}%
+    \par%
+    \mode<presentation>% 
+    {%
+      \setbeamercolor{block title}  {fg=white,bg=capioblue!65!white}% 
+      \setbeamercolor{block body}   {fg=black,bg=newgray}% 
+      \setbeamercolor{itemize item} {fg=capioblue!65!white}% 
+      \setbeamertemplate{itemize item}[triangle]% 
+    }%
+    \usebeamertemplate{block begin}}% 
+    {% 
+    \par\usebeamertemplate{block end}% 
+  \end{actionenv}% 
+}% 
+
+
+% Theorems
+
+%\defbeamertemplateparent{theorems}{theorem begin,theorem end}
+%{}
+
+\defbeamertemplate*{theorem begin}{phbaer}
+{%
+  \begin{\inserttheoremblockenv}
+  {%
+    \inserttheoremname
+    \ifx\inserttheoremaddition\@empty\else\ (\inserttheoremaddition)\fi%
+  }%
+}
+
+\defbeamertemplate*{theorem end}{phbaer}
+{\end{\inserttheoremblockenv}}
+
+
+% Proofs
+\defbeamertemplate*{proof begin}{phbaer}
+{\begin{block}{\insertproofname}}
+
+\defbeamertemplate*{proof end}{phbaer}
+{\end{block}}
+
+\defbeamertemplate*{qed symbol}{phbaer}
+{\openbox}
+
+
+
+
+\mode
+<all>

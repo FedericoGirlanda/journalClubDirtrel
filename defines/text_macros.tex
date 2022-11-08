@@ -1,0 +1,93 @@
+% text_maccros
+
+\newcommand{\inputTheSmallFigure}[1]
+{\raisebox{-0.25cm}{\includegraphics[width=0.8cm]{figures/math/quaternions/coords/#1}}}
+ 
+\newcommand{\yepp}{\ding{51}}
+\newcommand{\nope}{\text{--}}
+
+% \newcommand{\CadToSim}{\texttt{CAD-2-SIM}}
+
+
+\newcommand{\isf}[1]{\inputTheSmallFigure{#1}}
+
+% \inputSmallMatrix
+\newcommand{\ism}[9]{$\biggl[\begin{smallmatrix}#1&#2&#3\\#4&#5&#6\\#7&#8&#9\end{smallmatrix}\biggr]$}
+
+% % % 
+\newcommand{\smallhyperlink}[2]     {{\small\href{#1}{#2}}}
+\newcommand{\sepsmallhyperlink}[2]  {\begin{itemize}\item \smallhyperlink{#1} \end{itemize}}
+% % % 
+% % % 
+\newcommand{\smallurl}[1]     {{\tiny\url{#1}}}
+\newcommand{\sepsmallurl}[1]  {\begin{itemize}\item \smallurl{#1} \end{itemize}}
+% quotation marks - G erman :
+\newcommand{\glr}{bla}
+\newcommand{\gqq}[1]{\glqq #1\grqq}
+\newcommand{\gq}[1] {\glq  #1\grq}
+% quotation marks - E nglish : 
+\newcommand{\eqq}[1]{\lq\lq #1\rq\rq}
+\newcommand{\eq}[1] {\lq  #1\rq}
+% quotation marks - F rench : 
+\newcommand{\fqq}[1]{\flqq #1\frqq}
+\newcommand{\fq}[1] {\flq #1\frq}
+
+% write something like >@somebody< with the commmand >\at somebody<
+\newcommand{\at}{$@$}
+
+
+\newcommand{\req}[1]    {Equation~\ref{#1}}
+\newcommand{\rseq}[1]   {Eq.~\ref{#1}}
+
+\newcommand{\rsec}[1]   {Section~\ref{#1}}
+\newcommand{\rfig}[1]   {Figure~\ref{#1}}
+\newcommand{\rdiag}[1]  {Diagram~\ref{#1}}
+\newcommand{\rpar}[1]   {Paragraph~\ref{#1}}
+\newcommand{\rtab}[1]   {Table~\ref{#1}}
+\newcommand{\rapp}[1]   {Appendix~\ref{#1}}
+\newcommand{\rexa}[1]   {Example~\ref{#1}}
+
+
+% % todo A NICE FEATURE to MARK development directives: 
+\newcommand{\temptext}[1]{\noindent\fcolorbox{lightgray}{white}{\color{gray}\begin{minipage}{\textwidth}{#1}\end{minipage}}\color{black}}
+
+
+\newcommand{\technical}[1]{\texttt{#1}}
+
+% A
+\newcommand{\ADRF}{\technical{ADRF}}
+\newcommand{\AutodeskInventor}{\technical{Autodesk Inventor}}
+% C
+\newcommand{\CAD}{\technical{CAD}}
+\newcommand{\CadToSim}{\technical{CAD-2-SIM}} 
+\newcommand{\cpp}{\technical{C++}}
+\newcommand{\Cpp}{\technical{C++}}
+% G 
+\newcommand{\GUI}{\technical{GUI}}
+% L 
+\newcommand{\Latex}{\technical{\LaTeX}}
+% M 
+\newcommand{\Mars}{\technical{Mars}}
+\newcommand{\Matlab}{\technical{Matlab}}
+% O 
+\newcommand{\Openrave}{\technical{Openrave}}
+\newcommand{\opensim}{\technical{OpenSim}}
+% P
+\newcommand{\Python}{\technical{Python}}
+\newcommand{\python}{\technical{Python}}
+
+
+% S 
+\newcommand{\Simulink}{\technical{Simulink}}
+\newcommand{\Solidworks}{\technical{SolidWorks}}
+\newcommand{\SolidWorks}{\technical{SolidWorks}}
+\newcommand{\simtk}{\technical{SimTK}}
+\newcommand{\simbody}{\technical{SimBody}}
+% V 
+\newcommand{\Visualbasic}{\technical{VisualBasic}}
+% W
+\newcommand{\WRL}{\technical{WRL}}
+% X
+\newcommand{\XML}{\technical{XML}} 
+
+

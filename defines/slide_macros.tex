@@ -1,0 +1,211 @@
+% slide_macros
+
+\newcommand{\separationframe}[1]{\frame[noframenumbering]{\structpartshort{#1}}}
+
+
+
+% \newcommand{\specialSeparationframe}[2]{%
+% \frame{\begin{center}%
+% \includegraphics[width=0.66\linewidth]{#2}%                                                 
+% \end{center}% 
+% \vspace*{0.1cm}
+% {\color{capiogray}\huge #1}}
+% }
+
+\newcommand{\specialSeparationframe}[2]{%
+\begin{frame}
+% \pgfputat{\pgfxy(10.5, 2.5)}{\pgfbox[left,top]{\includegraphics[width=0.66\linewidth]{#2}}}
+% \pgfputat{\pgfxy(10.5, 5.5)}{\pgfbox[left,top]{\includegraphics[height=1cm]{figures/cad_2_sim_logo}}}
+% \pgfputat{\pgfxy(1.0, 5.5)}{\pgfbox[left,top]{\color{capiogray}\huge #1}}}
+% \pgfputat{\pgfxy(1.0, 5.5)}{\pgfbox[left,top]{\color{capiogray}\huge #1}} 
+% 
+\begin{center}
+\begin{columns}[c]
+\begin{column}{0.15\linewidth}
+ 
+\end{column}
+
+\begin{column}{0.35\linewidth}
+  \scriptsize 
+  \tableofcontents[currentsection]
+\end{column}
+
+\begin{column}{0.48\linewidth}
+\includegraphics[width=0.99\linewidth]{#2}
+\end{column}
+% 
+\end{columns}
+\end{center}
+
+{\color{capiogray}\huge #1}
+% 
+
+\end{frame}
+}
+
+
+%% {\color{fg!35}bla}
+
+% % % \usepackage{paralist}
+% % % 
+% % % \setlength{\pltopsep}       {2pt}       % Space between first item and preceding paragraph.
+% % % \setlength{\plpartopsep}    {0pt}       % Extra space added to \topsep when environment starts a new paragraph (is called in vmode).
+% % % 
+% % % \setlength{\plitemsep}      {0pt}       % Space between successive items.
+% % % \setlength{\plparsep}       {0pt}       % Space between paragraphs within an item – the \parskip for this environment.
+% % % 
+% % % \newenvironment{itemizeflat}
+% % % {\begin{compactitem}}
+% % % {\end{compactitem}}
+% % % 
+% % % \newenvironment{enumerateflat}
+% % % {\begin{compactenum}}
+% % % {\end{compactenum}}
+
+
+\newcommand{\pim}{\pause \item}
+
+\newcommand{\bluemph}[1]{\textcolor{blue}{#1}}
+
+
+% centering an image (needed for background image) -- three arguments 
+% 
+%   #1  --  figure width
+%   #2  --  figure vertical offset 
+%   #3  --  the figure file 
+% 
+\newcommand{\centergraphics}[3]
+{
+\parbox[c]{\paperwidth}{\vspace*{#2\paperwidth}\centering\includegraphics[width=#1\linewidth]{#3}}
+}
+
+
+% making an image opaque (nice for background images) -- four arguments 
+% 
+%   #1  --  opacity value 
+%   #2  --  figure width
+%   #3  --  figure vertical offset 
+%   #4  --  the figure file 
+% 
+\newcommand{\opaccentergraphics}[4]
+{
+\tikz\node[opacity=#1]{\centergraphics{#2}{#3}{#4}};
+}
+
+
+% centralize anything easily ... with restricted width 
+% 
+\newenvironment{slimcenter}[1]
+{%
+  \begin{columns}\begin{column}{#1}
+}{%
+  \end{column}\end{columns}
+}
+
+
+% centralize figure easily ... 
+% 
+\newenvironment{figureH}
+{% 
+  \begin{figure}[H]\centering
+}% 
+{% 
+  \end{figure}
+}
+
+% centralize table easily ... 
+% 
+\newenvironment{tableH}
+{% 
+  \begin{table}[H]\centering
+}% 
+{% 
+  \end{table}
+}
+
+
+% tweaking the quote environment 
+% 
+\renewenvironment{quote}
+  {\list{}{\leftmargin=0.3cm\rightmargin=0.3cm}\item[]\color{capiogray}\it}
+  {\endlist}
+
+% giving the source for a quotation 
+% 
+\newcommand{\quotesource}[1]
+  {\hspace*{\fill}\textup{\color{black}#1}}
+
+
+% --------------------------------------------------------------------------------
+
+% 
+% TODO : FOR CUSTOM BOXES -- check 'tcolorbox' -- see http://tex.stackexchange.com/questions/27093/what-are-alternatives-to-block
+% 
+
+% --------------------------------------------------------------------------------
+
+% an environment to refer too publications 
+% 
+\newenvironment<>{slideBibBox}
+{%
+    \begin{actionenv}%
+    \def\insertblocktitle{\footnotesize{Publication}}%
+    \par%
+     \mode<presentation>{%
+        % \setbeamercolor{block title}{ fg=white,bg=orange!20!black}
+        % \setbeamercolor{block body}{fg=black,bg=olive!50}
+        % \setbeamercolor{itemize item}{fg=orange!20!black}
+        % \setbeamertemplate{itemize item}[triangle]
+     }%
+    \usebeamertemplate{block begin}\footnotesize}
+{
+    \par\usebeamertemplate{block end}
+    \end{actionenv}
+}
+
+\newcommand{\currentPubState}[1]    {({\texttt{\tiny#1}})}
+
+\newcommand{\bibWHO}[1]     {#1.\ }
+\newcommand{\bibWHAT}[1]    {\emph{\eqq{#1}}.\ }
+\newcommand{\bibWHERE}[1]   {#1,\ }
+\newcommand{\bibWHEN}[1]    {#1.\ }
+\newcommand{\bibSTATUS}[1]  {\currentPubState{#1}}
+
+\newcommand{\bibWhoWhatWhereWhenStatus}[5]  
+{% 
+    \bibWHO{#1}\bibWHAT{#2}\bibWHERE{#3}\bibWHEN{#4}\bibSTATUS{#5}% 
+}% 
+
+\newcommand{\bibWhoWhatWhereWhenPublished}[4]  
+{% 
+    \bibWHO{#1}\bibWHAT{#2}\bibWHERE{#3}\bibWHEN{#4}% 
+}% 
+
+% --------------------------------------------------------------------------------
+
+
+% an environment to refer too publications 
+% 
+\newenvironment<>{slideWhitePaperBox}
+{%
+    \begin{actionenv}%
+    \def\insertblocktitle{\footnotesize{Whitepaper}}%
+    \par%
+     \mode<presentation>{%
+        % \setbeamercolor{block title}{ fg=white,bg=orange!20!black}
+        % \setbeamercolor{block body}{fg=black,bg=olive!50}
+        % \setbeamercolor{itemize item}{fg=orange!20!black}
+        % \setbeamertemplate{itemize item}[triangle]
+     }%
+    \usebeamertemplate{block begin}\footnotesize}
+{
+    \par\usebeamertemplate{block end}
+    \end{actionenv}
+}
+
+% --------------------------------------------------------------------------------
+
+\newcommand{\whiteWhat}[1]     {\emph{\eq{#1}}.}
+
+% --------------------------------------------------------------------------------
+

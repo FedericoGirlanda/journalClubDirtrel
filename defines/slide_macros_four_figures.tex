@@ -1,0 +1,128 @@
+%
+% some commands for including four figures into one slide ... 
+% 
+
+
+% a maximal figure - see http://tex.stackexchange.com/questions/32886/how-to-fit-a-large-figure-to-page
+% 
+\newcommand{\ingraphmax}[1] 
+{
+  {
+    \setlength{\fboxsep}{0pt}     %padding thickness
+    \setlength{\fboxrule}{1pt}    %padding thickness
+    \centering 
+    % 
+    \newpage\fcolorbox{lightgray}{white}{\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{#1}}
+  }
+}
+
+% 'ingraph' -- shorter proxy for 'includegraphics'
+% 
+\newcommand{\ingraph}[2]{
+  \centering\includegraphics[width=#1\linewidth]{#2}
+}
+
+
+\newcommand{\fourFigureGraphics}[1]     {\centering\includegraphics[width=0.8\linewidth]{#1}}
+
+\newcommand{\fourFigureFrame}[5]    
+{\begin{frame}{#1}
+% 
+\vspace*{0.05cm}
+\begin{columns}
+\centering 
+\begin{column}[t]{0.49\linewidth}
+\fourFigureGraphics{#2}
+\end{column}
+\quad 
+\begin{column}[t]{0.49\linewidth}
+\fourFigureGraphics{#3}
+\end{column}
+\end{columns}
+\vspace*{0.25cm}
+\begin{columns}
+\centering 
+\begin{column}[t]{0.49\linewidth}
+\fourFigureGraphics{#4}
+\end{column}
+\quad 
+\begin{column}[t]{0.49\linewidth}
+\fourFigureGraphics{#5}
+\end{column}
+\end{columns}
+% 
+\end{frame}
+}
+
+
+\newcommand{\fourFigureFramePaused}[5]    
+{\begin{frame}{#1}
+% 
+\vspace*{0.05cm}
+\begin{columns}
+\centering 
+\begin{column}[t]{0.49\linewidth}
+% \visible<2->
+{\fourFigureGraphics{#2}}
+\end{column}
+\quad 
+\begin{column}[t]{0.49\linewidth}
+% \visible<3->
+{\fourFigureGraphics{#3}}
+\end{column}
+\end{columns}
+\vspace*{0.25cm}
+\begin{columns}
+\centering 
+\begin{column}[t]{0.49\linewidth}
+% \visible<4->
+{\fourFigureGraphics{#4}}
+\end{column}
+\quad 
+\begin{column}[t]{0.49\linewidth}
+% \visible<5->
+{\fourFigureGraphics{#5}}
+\end{column}
+\end{columns}
+% 
+\end{frame}
+}
+
+
+\newcommand{\twoFigureFrame}[3]  
+{\begin{frame}{#1}
+% 
+\begin{columns}
+\centering 
+\begin{column}[t]{0.49\linewidth}
+\ingraphmax{#2}
+\end{column}
+\quad 
+\begin{column}[t]{0.49\linewidth}
+\ingraphmax{#3}
+\end{column}
+\end{columns}
+% 
+\end{frame}
+}
+
+
+
+\newcommand{\twoFigureFramePaused}[3]  
+{\begin{frame}{#1}
+% 
+\begin{columns}
+\centering 
+\begin{column}[t]{0.49\linewidth}
+% \visible<2->
+{\ingraphmax{#2}}
+\end{column}
+\quad 
+\begin{column}[t]{0.49\linewidth}
+% \visible<3->
+{\ingraphmax{#3}}
+\end{column}
+\end{columns}
+% 
+\end{frame}
+}

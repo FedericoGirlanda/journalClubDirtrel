@@ -1,0 +1,112 @@
+% Copyright 2007 by Till Tantau
+%
+% This file may be distributed and/or modified
+%
+% 1. under the LaTeX Project Public License and/or
+% 2. under the GNU Public License.
+%
+% See the file doc/licenses/LICENSE for more details.
+
+%\ProvidesPackageRCS $Header: /cvsroot/latex-beamer/latex-beamer/themes/outer/beamerouterthemesplit.sty,v 1.5 2007/01/28 20:48:30 tantau Exp $
+
+\newif\ifbeamer@sb@subsection
+
+\DeclareOptionBeamer{subsection}[true]{\csname beamer@sb@subsection#1\endcsname}
+\ExecuteOptionsBeamer{subsection=true}
+\ProcessOptionsBeamer
+
+\mode<presentation>
+%\setbeamertemplate{mini frame in other subsection}[default][100]
+%\setbeamercolor{section in head/foot}{fg=ukblue!20}
+%\setbeamercolor{frametitle}{fg=ukorange}
+%\setbeamercolor{subsection in head/foot}{parent=palette secondary}
+%\setbeamercolor{section in head/foot}{parent=palette quaternary}
+
+\useoutertheme{split}
+
+\usesectionheadtemplate
+  {\hfill\insertsectionhead}
+  {\hfill\color{fg!50!bg}\insertsectionhead}
+
+%\pgfdeclareimage[width=.13\paperwidth]{vs-logo}{vs-logo-white}
+%\pgfdeclareimage[height=.05\paperheight]{cn-logo}{cn2008-v4-white}
+
+%\logo{\pgfuseimage{vs-logo}}
+
+
+% \newcommand{\putat}[3]{\begin{picture}(0,0)(0,0)\put(#1,#2){#3}\end{picture}} % just a shorthand
+% ?? \putat{10}{10}{\includegraphics[height=6ex]{dfki-plain.pdf}}%}
+
+\beamer@compresstrue
+% Head
+\defbeamertemplate*{headline}{phbaer}
+{%
+  \leavevmode%
+  \begin{beamercolorbox}[wd=\paperwidth]{head bar}
+%     \begin{beamercolorbox}[right,wd=\paperwidth,ht=12ex,dp=1ex,leftskip=.15cm
+%       plus1fill,rightskip=.15cm]{head bar}
+%       \hspace{240pt}%
+%     \end{beamercolorbox}%     
+
+    \begin{beamercolorbox}[right,wd=\paperwidth,ht=8ex,dp=1ex,leftskip=0.15cm
+      plus1fill,rightskip=.15cm]{head bar}
+      \hspace{240pt}% 
+    \end{beamercolorbox}%
+    
+    
+    % \begin{beamercolorbox}[wd=.12\paperwidth,leftskip=.2cm,rightskip=.2cm]{foot bar fg}%
+    %  \includegraphics[height=6ex]{dfki-plain.pdf}%
+    %  \vskip-.9ex
+    %\end{beamercolorbox}%
+  \pgfputat{\pgfxy(11.1,0.1)}{\pgfbox[left,base]{\includegraphics[height=6ex]{defines/figures_template/dfki-plain.pdf}}}
+  \end{beamercolorbox}
+  \vskip2pt
+  \includegraphics[width=\paperwidth] {defines/figures_template/top_bar_slim.png} %
+  
+  \vskip1ex\insertnavigation{\paperwidth}\vskip1pt
+
+  \nointerlineskip
+}
+
+% FROM THE BEAMER USER GUIDE : 
+% 
+% The height of the headline and footline templates is calculated automatically. This is done by typeset-
+% ting the templates and then “having a look” at their heights. This recalculation is done right at the
+% beginning of the document, after all packages have been loaded and even after these have executed
+% their \AtBeginDocument initialization.
+
+\defbeamertemplate*{footline}{phbaer}{%
+  \leavevmode%
+  \begin{beamercolorbox}[wd=\paperwidth]{foot bar}%
+    % \begin{beamercolorbox}[wd=.12\paperwidth,leftskip=.2cm,rightskip=.2cm]{foot bar fg}%
+    \begin{beamercolorbox}[wd=.24\paperwidth,leftskip=.2cm,rightskip=.2cm]{foot bar fg}%
+     %% \includegraphics[height=6ex]{dfki-plain.pdf}%
+     \includegraphics[height=7ex]{figures/LogoUniPD.png}%
+      \vskip-.9ex
+    \end{beamercolorbox}%
+    % \begin{beamercolorbox}[wd=.74\paperwidth]{foot bar fg}%
+    \begin{beamercolorbox}[wd=.62\paperwidth]{foot bar fg}%
+      % \begin{beamercolorbox}[wd=.74\paperwidth,ht=4ex,dp=.6ex,leftskip=.3cm,rightskip=.3cm]{foot bar fg}%
+      \begin{beamercolorbox}[wd=.62\paperwidth,ht=4ex,dp=.6ex,leftskip=.3cm,rightskip=.3cm]{foot bar fg}%
+        {\textbf{\usebeamerfont{text in foot}\insertshorttitle}}
+      \end{beamercolorbox}
+      \begin{beamercolorbox}[wd=.74\paperwidth,ht=2ex,dp=2.4ex,leftskip=.3cm,rightskip=.3cm
+        plus1fill]{foot bar fg}%
+        \usebeamerfont{text in foot}\insertshortauthor, \insertsubtitle, \insertdate
+      \end{beamercolorbox}
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.14\paperwidth]{foot bar fg}%
+      \begin{beamercolorbox}[right,wd=.14\paperwidth,ht=4ex,dp=.6ex,leftskip=.2cm
+        plus1fill,rightskip=.2cm]{foot bar fg}%
+      \end{beamercolorbox}
+      \begin{beamercolorbox}[right,wd=.14\paperwidth,ht=2ex,dp=2.4ex,leftskip=.2cm
+        plus1fill,rightskip=.2cm]{foot bar fg}%
+        \usebeamerfont{text in foot}Slide {\insertframenumber} of \inserttotalframenumber
+      \end{beamercolorbox}
+    \end{beamercolorbox}
+  \end{beamercolorbox}
+}
+
+
+\mode
+<all>

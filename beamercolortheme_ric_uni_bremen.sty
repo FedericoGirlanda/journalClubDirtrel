@@ -1,0 +1,112 @@
+% this file is based on developements which are tagged as 
+% 
+% Copyright 2005 by Arthur van Dam <dam@math.uu.nl>
+% Copyright 2010 by Philipp A. Baer <phbaer@npw.net>
+
+\mode<presentation>
+
+\definecolor{pbgrey}{rgb}{0.77,0.75,0.67}
+
+% OlD : \definecolor{header}{rgb}{0.77,0.75,0.67}
+\definecolor{header}{rgb}{0.95,0.95,0.95}
+
+\definecolor{footer}{rgb}{0.93,0.93,0.96}
+
+\definecolor{capiogray}{cmyk}{0,0,0,0.75}
+\definecolor{capiolightgray}{cmyk}{0,0,0,0.25}
+\definecolor{capioyellow}{cmyk}{0,0.5,1,0}
+% \definecolor{capioblue}{cmyk}{0.8167,0.6807,0,0}
+\definecolor{capioblue}{cmyk}{0.81,0.68,0.4,0.2}
+\definecolor{capiogreen}{cmyk}{0.7909,0,1,0}
+\definecolor{capiomagenta}{cmyk}{0.44,0.9183,0,0}
+
+\definecolor{cnorange}{cmyk}{0,0.43,1,0}
+\definecolor{cnyellow}{cmyk}{0,0.25,1,0}
+\definecolor{cndarkgray}{cmyk}{1,0.26,0,0.33}
+\definecolor{ukgray}{cmyk}{0,0,0,0.50}
+\definecolor{cnblue}{cmyk}{0.85,0.45,0,0.15}
+\definecolor{cndarkblue}{cmyk}{0.85,0.45,0,0.50}
+\definecolor{cnred}{cmyk}{0,0.8,0.95,0}
+\definecolor{cndarkred}{cmyk}{0,0.8,0.95,0.3}
+
+\definecolor{cndarkgray}{cmyk}{0.0,0.0,0.0,0.80}
+\definecolor{cngray}{cmyk}{0.0,0.0,0.0,0.73}
+\definecolor{cnlightgray}{cmyk}{0.0,0.0,0.0,0.40}
+\definecolor{cngreen}{cmyk}{0.25,0.0,0.75,0.2}
+\definecolor{cndarkgreen}{cmyk}{0.25,0.0,0.75,0.5}
+\definecolor{cnblue}{cmyk}{1,0.26,0,0.33}
+
+% rgb : 218, 31, 61
+\definecolor{reditem}{rgb}{0.855,0.121,0.239}
+% rgb : 0, 204, 255 
+\definecolor{bluesubitem}{rgb}{0.0,0.8,1.0}
+% 
+\definecolor{newgray}{cmyk}{0.0,0.0,0.0,0.10}
+
+\setbeamercolor{structure}{fg=capioblue}
+\setbeamercolor{alert}{fg=capiomagenta}
+\setbeamercolor{alerted text}{fg=cndarkred}
+\setbeamercolor{example text}{fg=cndarkblue}
+
+\setbeamerfont{title}{series=\bfseries,size=\Huge}
+\setbeamercolor{title}{fg=capiogray}
+
+\setbeamerfont{subtitle}{series=\bfseries,size=\Large}
+\setbeamercolor{subtitle}{fg=capiogray}
+
+\setbeamerfont{author}{series=\mdseries,size=\footnotesize}
+\setbeamercolor{author}{fg=capiogray}
+
+\setbeamerfont{institute}{series=\mdseries,size=\footnotesize}
+\setbeamercolor{institute}{fg=capiogray} %black!20!header}
+
+
+% --- 
+
+\setbeamercolor{itemize item}{fg=reditem}
+\setbeamercolor{itemize subitem}{fg=bluesubitem}
+\setbeamertemplate{itemize subitem}[square]
+
+\setbeamercolor{item}{fg=capiogray}
+%\setbeamercolor{navigatin symbols}{use=structure,fg=black}
+%\setbeamercolor{navigatin symbols dimmed}{use=structure,fg=black!20!white}
+
+\setbeamercolor{section in toc}{fg=black}
+
+\setbeamerfont{block title}{size=\normalsize}
+\setbeamercolor{block title}{fg=white,bg=capioblue!95!white}
+\setbeamercolor{block title alerted}{use=alerted text,fg=cnred,bg=alerted text.fg!30!bg}
+\setbeamercolor{block title example}{use=example text,fg=cnblue,bg=example text.fg!30!bg}
+
+\setbeamercolor{block body}{parent=normal text,use=block title,bg=newgray}
+\setbeamercolor{block body alerted}{parent=normal text,use=block title alerted,bg=block title alerted.bg!40!bg}
+\setbeamercolor{block body example}{parent=normal text,use=block title example,bg=block title example.bg!40!bg}
+
+\setbeamertemplate{mini frame in other subsection}[default][75]
+\setbeamertemplate{section in head/foot shaded}[default][75]
+
+\setbeamercolor{sidebar}{bg=cngreen!70}
+
+\setbeamercolor{section in head/foot}{fg=black!70!header}
+\setbeamercolor{mini frame}{fg=black!70!header,bg=header}
+\setbeamercolor{subsection in head/foot}{parent=section in head/foot}
+\setbeamercolor{title in head}{fg=white}
+\setbeamercolor{text in foot}{fg=footer}
+\setbeamercolor{slide in head/foot}{bg=cndarkgray,fg=white}
+\setbeamercolor{date in head/foot}{bg=cndarkgray!80,fg=cngreen}
+\setbeamercolor{head bar}{bg=header,fg=white}
+\setbeamercolor{foot bar}{bg=footer,fg=cndarkgray}
+
+\setbeamercolor{frametitle}{bg=white!0,fg=black!60!header}
+\setbeamerfont{frametitle}{series=\bfseries,size=\Large}
+
+%\setbeamercolor{palette sidebar primary}{fg=craneblue}
+%\setbeamercolor{palette sidebar secondary}{fg=craneblue!75}
+%\setbeamercolor{palette sidebar tertiary}{fg=craneblue!75}
+%\setbeamercolor{palette sidebar quaternary}{fg=craneblue}
+
+\setbeamercolor*{separation line}{bg=unikblue!100}
+\setbeamercolor*{fine separation line}{bg=unikblue!100}
+
+\mode
+<all>
