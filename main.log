@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.11)  28 SEP 2022 11:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.7.11)  8 NOV 2022 16:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/federico/Documents/Slides1stPresentation/main.tex
-(/home/federico/Documents/Slides1stPresentation/main.tex
+**/home/federico/Documents/journalClubDirtrel/main.tex
+(/home/federico/Documents/journalClubDirtrel/main.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14> (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2019/09/29 v3.57 A class for typesetting presentations
@@ -883,10 +883,10 @@ Package hyperref Warning: Option `bookmarks' has already been used,
 (hyperref)                setting the option has no effect on input line 93.
 
 Package hyperref Info: Option `breaklinks' set `true' on input line 93.
-(/home/federico/Documents/Slides1stPresentation/beamer_template_theme_ric_uni_bremen.sty (/home/federico/Documents/Slides1stPresentation/beameroutertheme_ric_uni_bremen.sty (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemesplit.sty)) (/home/federico/Documents/Slides1stPresentation/beamerinnertheme_ric_uni_bremen.sty
+(/home/federico/Documents/journalClubDirtrel/beamer_template_theme_ric_uni_bremen.sty (/home/federico/Documents/journalClubDirtrel/beameroutertheme_ric_uni_bremen.sty (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemesplit.sty)) (/home/federico/Documents/journalClubDirtrel/beamerinnertheme_ric_uni_bremen.sty
 \beamer@dima=\dimen331
 \beamer@dimb=\dimen332
-) (/home/federico/Documents/Slides1stPresentation/beamercolortheme_ric_uni_bremen.sty)) (/usr/share/texlive/texmf-dist/tex/latex/appendixnumberbeamer/appendixnumberbeamer.sty) (/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+) (/home/federico/Documents/journalClubDirtrel/beamercolortheme_ric_uni_bremen.sty)) (/usr/share/texlive/texmf-dist/tex/latex/appendixnumberbeamer/appendixnumberbeamer.sty) (/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 ) (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2019/12/01 v3.14 programmable bibliographies (PK/MW)
@@ -1092,7 +1092,7 @@ Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
  (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
 File: biblatex.cfg 
-)) (/home/federico/Documents/Slides1stPresentation/defines/text_macros.tex) (/home/federico/Documents/Slides1stPresentation/defines/slide_macros.tex) (/home/federico/Documents/Slides1stPresentation/defines/math_macros.tex) (/home/federico/Documents/Slides1stPresentation/defines/slide_macros_four_figures.tex) (/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+)) (/home/federico/Documents/journalClubDirtrel/defines/text_macros.tex) (/home/federico/Documents/journalClubDirtrel/defines/slide_macros.tex) (/home/federico/Documents/journalClubDirtrel/defines/math_macros.tex) (/home/federico/Documents/journalClubDirtrel/defines/slide_macros_four_figures.tex) (/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2020/01/13 v3.5 verbatim text (tvz,hv)
 \FV@CodeLineNo=\count476
 \FV@InFile=\read5
@@ -1149,7 +1149,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/pxr/bx/it --> OT1/lmr/bx/it on input line 37.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/pxtt/b/n --> OT1/lmtt/m/n on input line 38.
-) (/home/federico/Documents/Slides1stPresentation/defines/mathematics/variables_and_constants.tex) (/home/federico/Documents/Slides1stPresentation/defines/mathematics/environments.tex) (/home/federico/Documents/Slides1stPresentation/defines/math_defines_document.tex)
+) (/home/federico/Documents/journalClubDirtrel/defines/mathematics/variables_and_constants.tex) (/home/federico/Documents/journalClubDirtrel/defines/mathematics/environments.tex) (/home/federico/Documents/journalClubDirtrel/defines/math_defines_document.tex)
 \c@mathLableNode=\count479
  (/usr/share/texlive/texmf-dist/tex/latex/acronym/acronym.sty
 Package: acronym 2019/11/11 v1.42 Support for acronyms (Tobias Oetiker)
@@ -1208,7 +1208,7 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 
 \@quotelevel=\count490
 \@quotereset=\count491
-(/home/federico/Documents/Slides1stPresentation/main.aux)
+(/home/federico/Documents/journalClubDirtrel/main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/pxmi/m/it on input line 447.
@@ -1314,7 +1314,7 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 447.
 LaTeX Info: Redefining \pageref on input line 447.
 LaTeX Info: Redefining \nameref on input line 447.
- (/home/federico/Documents/Slides1stPresentation/main.out) (/home/federico/Documents/Slides1stPresentation/main.out)
+ (/home/federico/Documents/journalClubDirtrel/main.out) (/home/federico/Documents/journalClubDirtrel/main.out)
 \@outlinefile=\write8
 \openout8 = `main.out'.
 
@@ -1415,10 +1415,10 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
- (/home/federico/Documents/Slides1stPresentation/main.bbl)
+ (/home/federico/Documents/journalClubDirtrel/main.bbl)
 Package biblatex Info: Reference section=0 on input line 447.
 Package biblatex Info: Reference segment=0 on input line 447.
- (/home/federico/Documents/Slides1stPresentation/main.nav)
+ (/home/federico/Documents/journalClubDirtrel/main.nav)
 <figures/LogoUniPD.png, id=42, 238.8925pt x 240.9pt>
 File: figures/LogoUniPD.png Graphic file (type png)
 <use figures/LogoUniPD.png>
@@ -1439,39 +1439,35 @@ File: defines/figures_template/top_bar_slim.png Graphic file (type png)
 <use defines/figures_template/top_bar_slim.png>
 Package pdftex.def Info: defines/figures_template/top_bar_slim.png  used on input line 447.
 (pdftex.def)             Requested size: 364.19536pt x 1.21396pt.
-(/home/federico/Documents/Slides1stPresentation/commands.tex)
+(/home/federico/Documents/journalClubDirtrel/commands.tex)
 
 Package hyperref Warning: Option `pdfauthor' has already been used,
 (hyperref)                setting the option has no effect on input line 462.
 
-<figures/interplay.pdf, id=76, 350.05782pt x 204.01219pt>
-File: figures/interplay.pdf Graphic file (type pdf)
-<use figures/interplay.pdf>
-Package pdftex.def Info: figures/interplay.pdf  used on input line 477.
-(pdftex.def)             Requested size: 122.01462pt x 71.10992pt.
+<figures/trajStab.pdf, id=58, 94.85437pt x 44.41594pt>
+File: figures/trajStab.pdf Graphic file (type pdf)
+<use figures/trajStab.pdf>
+Package pdftex.def Info: figures/trajStab.pdf  used on input line 471.
+(pdftex.def)             Requested size: 75.9328pt x 35.55496pt.
 
 
-pdfTeX warning: pdflatex (file /home/federico/Documents/Slides1stPresentation/figures/Logo_Underactuated_Lab_Final.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<figures/Logo_Underactuated_Lab_Final.pdf, id=77, 2463.98546pt x 599.40637pt>
+pdfTeX warning: pdflatex (file /home/federico/Documents/journalClubDirtrel/figures/Logo_Underactuated_Lab_Final.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<figures/Logo_Underactuated_Lab_Final.pdf, id=59, 2463.98546pt x 599.40637pt>
 File: figures/Logo_Underactuated_Lab_Final.pdf Graphic file (type pdf)
 <use figures/Logo_Underactuated_Lab_Final.pdf>
-Package pdftex.def Info: figures/Logo_Underactuated_Lab_Final.pdf  used on input line 477.
+Package pdftex.def Info: figures/Logo_Underactuated_Lab_Final.pdf  used on input line 471.
 (pdftex.def)             Requested size: 43.8385pt x 10.66644pt.
-
-Overfull \vbox (4.49397pt too high) detected at line 477
- []
-
 File: defines/figures_template/dfki-plain.pdf Graphic file (type pdf)
 <use defines/figures_template/dfki-plain.pdf>
-Package pdftex.def Info: defines/figures_template/dfki-plain.pdf  used on input line 477.
+Package pdftex.def Info: defines/figures_template/dfki-plain.pdf  used on input line 471.
 (pdftex.def)             Requested size: 35.04692pt x 13.3331pt.
 File: defines/figures_template/top_bar_slim.png Graphic file (type png)
 <use defines/figures_template/top_bar_slim.png>
-Package pdftex.def Info: defines/figures_template/top_bar_slim.png  used on input line 477.
+Package pdftex.def Info: defines/figures_template/top_bar_slim.png  used on input line 471.
 (pdftex.def)             Requested size: 364.19536pt x 1.21396pt.
 File: figures/LogoUniPD.png Graphic file (type png)
 <use figures/LogoUniPD.png>
-Package pdftex.def Info: figures/LogoUniPD.png  used on input line 477.
+Package pdftex.def Info: figures/LogoUniPD.png  used on input line 471.
 (pdftex.def)             Requested size: 15.42284pt x 15.55528pt.
 
 Overfull \hbox (43.70723pt too wide) has occurred while \output is active
@@ -1480,73 +1476,18 @@ Overfull \hbox (43.70723pt too wide) has occurred while \output is active
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
- </home/federico/Documents/Slides1stPresentation/defines/figures_template/dfki-plain.pdf> </home/federico/Documents/Slides1stPresentation/defines/figures_template/top_bar_slim.png> </home/federico/Documents/Slides1stPresentation/figures/interplay.pdf> </home/federico/Documents/Slides1stPresentation/figures/Logo_Underactuated_Lab_Final.pdf> </home/federico/Documents/Slides1stPresentation/figures/LogoUniPD.png>]
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 504.
- (/usr/share/texmf/tex/latex/lm/omllmm.fd
-File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 504.
- (/usr/share/texmf/tex/latex/lm/omslmsy.fd
-File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 504.
- (/usr/share/texmf/tex/latex/lm/omxlmex.fd
-File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 504.
-LaTeX Font Info:    Trying to load font information for U+pxsya on input line 504.
- (/usr/share/texlive/texmf-dist/tex/latex/pxfonts/upxsya.fd
-File: upxsya.fd 2000/12/14 v1.0
-)
-LaTeX Font Info:    Trying to load font information for U+pxsyb on input line 504.
- (/usr/share/texlive/texmf-dist/tex/latex/pxfonts/upxsyb.fd
-File: utxsyb.fd 2000/12/14 v1.0
-)
-LaTeX Font Info:    Trying to load font information for OT1+pxr on input line 504.
- (/usr/share/texlive/texmf-dist/tex/latex/pxfonts/ot1pxr.fd
-File: ot1pxr.fd 2000/12/14 v1.0
-) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-ppl.cfg
-File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
-)
-LaTeX Font Info:    Trying to load font information for U+pxmia on input line 504.
- (/usr/share/texlive/texmf-dist/tex/latex/pxfonts/upxmia.fd
-File: upxmia.fd 2000/12/14 v1.0
-)
-LaTeX Font Info:    Trying to load font information for U+pxsyc on input line 504.
- (/usr/share/texlive/texmf-dist/tex/latex/pxfonts/upxsyc.fd
-File: upxsyc.fd 2000/12/14 v1.0
-)
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 504.
- (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
-File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-)
-LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <5> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 504.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 504.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 504.
-LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <8> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 504.
-LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <6> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 504.
-<figures/cvPhoto.jpg, id=181, 674.52pt x 831.85782pt>
-File: figures/cvPhoto.jpg Graphic file (type jpg)
-<use figures/cvPhoto.jpg>
-Package pdftex.def Info: figures/cvPhoto.jpg  used on input line 504.
-(pdftex.def)             Requested size: 41.44722pt x 48.34805pt.
+ </home/federico/Documents/journalClubDirtrel/defines/figures_template/dfki-plain.pdf> </home/federico/Documents/journalClubDirtrel/defines/figures_template/top_bar_slim.png> </home/federico/Documents/journalClubDirtrel/figures/trajStab.pdf> </home/federico/Documents/journalClubDirtrel/figures/Logo_Underactuated_Lab_Final.pdf> </home/federico/Documents/journalClubDirtrel/figures/LogoUniPD.png>] (/home/federico/Documents/journalClubDirtrel/main.toc)
 File: defines/figures_template/dfki-plain.pdf Graphic file (type pdf)
 <use defines/figures_template/dfki-plain.pdf>
-Package pdftex.def Info: defines/figures_template/dfki-plain.pdf  used on input line 504.
+Package pdftex.def Info: defines/figures_template/dfki-plain.pdf  used on input line 476.
 (pdftex.def)             Requested size: 35.04692pt x 13.3331pt.
 File: defines/figures_template/top_bar_slim.png Graphic file (type png)
 <use defines/figures_template/top_bar_slim.png>
-Package pdftex.def Info: defines/figures_template/top_bar_slim.png  used on input line 504.
+Package pdftex.def Info: defines/figures_template/top_bar_slim.png  used on input line 476.
 (pdftex.def)             Requested size: 364.19536pt x 1.21396pt.
 File: figures/LogoUniPD.png Graphic file (type png)
 <use figures/LogoUniPD.png>
-Package pdftex.def Info: figures/LogoUniPD.png  used on input line 504.
+Package pdftex.def Info: figures/LogoUniPD.png  used on input line 476.
 (pdftex.def)             Requested size: 15.42284pt x 15.55528pt.
 
 Overfull \hbox (43.70723pt too wide) has occurred while \output is active
@@ -1555,18 +1496,18 @@ Overfull \hbox (43.70723pt too wide) has occurred while \output is active
 
 [2
 
- </home/federico/Documents/Slides1stPresentation/figures/cvPhoto.jpg>] (/home/federico/Documents/Slides1stPresentation/main.toc)
+]
 File: defines/figures_template/dfki-plain.pdf Graphic file (type pdf)
 <use defines/figures_template/dfki-plain.pdf>
-Package pdftex.def Info: defines/figures_template/dfki-plain.pdf  used on input line 509.
+Package pdftex.def Info: defines/figures_template/dfki-plain.pdf  used on input line 481.
 (pdftex.def)             Requested size: 35.04692pt x 13.3331pt.
 File: defines/figures_template/top_bar_slim.png Graphic file (type png)
 <use defines/figures_template/top_bar_slim.png>
-Package pdftex.def Info: defines/figures_template/top_bar_slim.png  used on input line 509.
+Package pdftex.def Info: defines/figures_template/top_bar_slim.png  used on input line 481.
 (pdftex.def)             Requested size: 364.19536pt x 1.21396pt.
 File: figures/LogoUniPD.png Graphic file (type png)
 <use figures/LogoUniPD.png>
-Package pdftex.def Info: figures/LogoUniPD.png  used on input line 509.
+Package pdftex.def Info: figures/LogoUniPD.png  used on input line 481.
 (pdftex.def)             Requested size: 15.42284pt x 15.55528pt.
 
 Overfull \hbox (43.70723pt too wide) has occurred while \output is active
@@ -1576,17 +1517,72 @@ Overfull \hbox (43.70723pt too wide) has occurred while \output is active
 [3
 
 ]
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 507.
+ (/usr/share/texmf/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 507.
+ (/usr/share/texmf/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 507.
+ (/usr/share/texmf/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 507.
+LaTeX Font Info:    Trying to load font information for U+pxsya on input line 507.
+ (/usr/share/texlive/texmf-dist/tex/latex/pxfonts/upxsya.fd
+File: upxsya.fd 2000/12/14 v1.0
+)
+LaTeX Font Info:    Trying to load font information for U+pxsyb on input line 507.
+ (/usr/share/texlive/texmf-dist/tex/latex/pxfonts/upxsyb.fd
+File: utxsyb.fd 2000/12/14 v1.0
+)
+LaTeX Font Info:    Trying to load font information for OT1+pxr on input line 507.
+ (/usr/share/texlive/texmf-dist/tex/latex/pxfonts/ot1pxr.fd
+File: ot1pxr.fd 2000/12/14 v1.0
+) (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-ppl.cfg
+File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+pxmia on input line 507.
+ (/usr/share/texlive/texmf-dist/tex/latex/pxfonts/upxmia.fd
+File: upxmia.fd 2000/12/14 v1.0
+)
+LaTeX Font Info:    Trying to load font information for U+pxsyc on input line 507.
+ (/usr/share/texlive/texmf-dist/tex/latex/pxfonts/upxsyc.fd
+File: upxsyc.fd 2000/12/14 v1.0
+)
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 507.
+ (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <5> not available
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 507.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 507.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 507.
+LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <8> not available
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 507.
+LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <6> not available
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 507.
+<figures/trajStab.png, id=160, 343.2825pt x 188.705pt>
+File: figures/trajStab.png Graphic file (type png)
+<use figures/trajStab.png>
+Package pdftex.def Info: figures/trajStab.png  used on input line 507.
+(pdftex.def)             Requested size: 93.25845pt x 124.34987pt.
 File: defines/figures_template/dfki-plain.pdf Graphic file (type pdf)
 <use defines/figures_template/dfki-plain.pdf>
-Package pdftex.def Info: defines/figures_template/dfki-plain.pdf  used on input line 514.
+Package pdftex.def Info: defines/figures_template/dfki-plain.pdf  used on input line 507.
 (pdftex.def)             Requested size: 35.04692pt x 13.3331pt.
 File: defines/figures_template/top_bar_slim.png Graphic file (type png)
 <use defines/figures_template/top_bar_slim.png>
-Package pdftex.def Info: defines/figures_template/top_bar_slim.png  used on input line 514.
+Package pdftex.def Info: defines/figures_template/top_bar_slim.png  used on input line 507.
 (pdftex.def)             Requested size: 364.19536pt x 1.21396pt.
 File: figures/LogoUniPD.png Graphic file (type png)
 <use figures/LogoUniPD.png>
-Package pdftex.def Info: figures/LogoUniPD.png  used on input line 514.
+Package pdftex.def Info: figures/LogoUniPD.png  used on input line 507.
 (pdftex.def)             Requested size: 15.42284pt x 15.55528pt.
 
 Overfull \hbox (43.70723pt too wide) has occurred while \output is active
@@ -1595,18 +1591,18 @@ Overfull \hbox (43.70723pt too wide) has occurred while \output is active
 
 [4
 
-]
+ </home/federico/Documents/journalClubDirtrel/figures/trajStab.png>]
 File: defines/figures_template/dfki-plain.pdf Graphic file (type pdf)
 <use defines/figures_template/dfki-plain.pdf>
-Package pdftex.def Info: defines/figures_template/dfki-plain.pdf  used on input line 520.
+Package pdftex.def Info: defines/figures_template/dfki-plain.pdf  used on input line 510.
 (pdftex.def)             Requested size: 35.04692pt x 13.3331pt.
 File: defines/figures_template/top_bar_slim.png Graphic file (type png)
 <use defines/figures_template/top_bar_slim.png>
-Package pdftex.def Info: defines/figures_template/top_bar_slim.png  used on input line 520.
+Package pdftex.def Info: defines/figures_template/top_bar_slim.png  used on input line 510.
 (pdftex.def)             Requested size: 364.19536pt x 1.21396pt.
 File: figures/LogoUniPD.png Graphic file (type png)
 <use figures/LogoUniPD.png>
-Package pdftex.def Info: figures/LogoUniPD.png  used on input line 520.
+Package pdftex.def Info: figures/LogoUniPD.png  used on input line 510.
 (pdftex.def)             Requested size: 15.42284pt x 15.55528pt.
 
 Overfull \hbox (43.70723pt too wide) has occurred while \output is active
@@ -1616,22 +1612,17 @@ Overfull \hbox (43.70723pt too wide) has occurred while \output is active
 [5
 
 ]
-<figures/humanRun.png, id=335, 735.74875pt x 833.1125pt>
-File: figures/humanRun.png Graphic file (type png)
-<use figures/humanRun.png>
-Package pdftex.def Info: figures/humanRun.png  used on input line 540.
-(pdftex.def)             Requested size: 93.25941pt x 124.33858pt.
 File: defines/figures_template/dfki-plain.pdf Graphic file (type pdf)
 <use defines/figures_template/dfki-plain.pdf>
-Package pdftex.def Info: defines/figures_template/dfki-plain.pdf  used on input line 540.
+Package pdftex.def Info: defines/figures_template/dfki-plain.pdf  used on input line 513.
 (pdftex.def)             Requested size: 35.04692pt x 13.3331pt.
 File: defines/figures_template/top_bar_slim.png Graphic file (type png)
 <use defines/figures_template/top_bar_slim.png>
-Package pdftex.def Info: defines/figures_template/top_bar_slim.png  used on input line 540.
+Package pdftex.def Info: defines/figures_template/top_bar_slim.png  used on input line 513.
 (pdftex.def)             Requested size: 364.19536pt x 1.21396pt.
 File: figures/LogoUniPD.png Graphic file (type png)
 <use figures/LogoUniPD.png>
-Package pdftex.def Info: figures/LogoUniPD.png  used on input line 540.
+Package pdftex.def Info: figures/LogoUniPD.png  used on input line 513.
 (pdftex.def)             Requested size: 15.42284pt x 15.55528pt.
 
 Overfull \hbox (43.70723pt too wide) has occurred while \output is active
@@ -1640,23 +1631,18 @@ Overfull \hbox (43.70723pt too wide) has occurred while \output is active
 
 [6
 
- </home/federico/Documents/Slides1stPresentation/figures/humanRun.png>]
-<figures/humanDesign.jpg, id=371, 401.5pt x 395.4775pt>
-File: figures/humanDesign.jpg Graphic file (type jpg)
-<use figures/humanDesign.jpg>
-Package pdftex.def Info: figures/humanDesign.jpg  used on input line 560.
-(pdftex.def)             Requested size: 93.26201pt x 93.26308pt.
+]
 File: defines/figures_template/dfki-plain.pdf Graphic file (type pdf)
 <use defines/figures_template/dfki-plain.pdf>
-Package pdftex.def Info: defines/figures_template/dfki-plain.pdf  used on input line 560.
+Package pdftex.def Info: defines/figures_template/dfki-plain.pdf  used on input line 516.
 (pdftex.def)             Requested size: 35.04692pt x 13.3331pt.
 File: defines/figures_template/top_bar_slim.png Graphic file (type png)
 <use defines/figures_template/top_bar_slim.png>
-Package pdftex.def Info: defines/figures_template/top_bar_slim.png  used on input line 560.
+Package pdftex.def Info: defines/figures_template/top_bar_slim.png  used on input line 516.
 (pdftex.def)             Requested size: 364.19536pt x 1.21396pt.
 File: figures/LogoUniPD.png Graphic file (type png)
 <use figures/LogoUniPD.png>
-Package pdftex.def Info: figures/LogoUniPD.png  used on input line 560.
+Package pdftex.def Info: figures/LogoUniPD.png  used on input line 516.
 (pdftex.def)             Requested size: 15.42284pt x 15.55528pt.
 
 Overfull \hbox (43.70723pt too wide) has occurred while \output is active
@@ -1665,23 +1651,18 @@ Overfull \hbox (43.70723pt too wide) has occurred while \output is active
 
 [7
 
- </home/federico/Documents/Slides1stPresentation/figures/humanDesign.jpg>]
-<figures/slipGround.jpg, id=407, 726.715pt x 484.81125pt>
-File: figures/slipGround.jpg Graphic file (type jpg)
-<use figures/slipGround.jpg>
-Package pdftex.def Info: figures/slipGround.jpg  used on input line 579.
-(pdftex.def)             Requested size: 93.2565pt x 108.80411pt.
+]
 File: defines/figures_template/dfki-plain.pdf Graphic file (type pdf)
 <use defines/figures_template/dfki-plain.pdf>
-Package pdftex.def Info: defines/figures_template/dfki-plain.pdf  used on input line 579.
+Package pdftex.def Info: defines/figures_template/dfki-plain.pdf  used on input line 519.
 (pdftex.def)             Requested size: 35.04692pt x 13.3331pt.
 File: defines/figures_template/top_bar_slim.png Graphic file (type png)
 <use defines/figures_template/top_bar_slim.png>
-Package pdftex.def Info: defines/figures_template/top_bar_slim.png  used on input line 579.
+Package pdftex.def Info: defines/figures_template/top_bar_slim.png  used on input line 519.
 (pdftex.def)             Requested size: 364.19536pt x 1.21396pt.
 File: figures/LogoUniPD.png Graphic file (type png)
 <use figures/LogoUniPD.png>
-Package pdftex.def Info: figures/LogoUniPD.png  used on input line 579.
+Package pdftex.def Info: figures/LogoUniPD.png  used on input line 519.
 (pdftex.def)             Requested size: 15.42284pt x 15.55528pt.
 
 Overfull \hbox (43.70723pt too wide) has occurred while \output is active
@@ -1690,22 +1671,18 @@ Overfull \hbox (43.70723pt too wide) has occurred while \output is active
 
 [8
 
- </home/federico/Documents/Slides1stPresentation/figures/slipGround.jpg>]
-File: figures/interplay.pdf Graphic file (type pdf)
-<use figures/interplay.pdf>
-Package pdftex.def Info: figures/interplay.pdf  used on input line 587.
-(pdftex.def)             Requested size: 276.35034pt x 155.4431pt.
+]
 File: defines/figures_template/dfki-plain.pdf Graphic file (type pdf)
 <use defines/figures_template/dfki-plain.pdf>
-Package pdftex.def Info: defines/figures_template/dfki-plain.pdf  used on input line 587.
+Package pdftex.def Info: defines/figures_template/dfki-plain.pdf  used on input line 525.
 (pdftex.def)             Requested size: 35.04692pt x 13.3331pt.
 File: defines/figures_template/top_bar_slim.png Graphic file (type png)
 <use defines/figures_template/top_bar_slim.png>
-Package pdftex.def Info: defines/figures_template/top_bar_slim.png  used on input line 587.
+Package pdftex.def Info: defines/figures_template/top_bar_slim.png  used on input line 525.
 (pdftex.def)             Requested size: 364.19536pt x 1.21396pt.
 File: figures/LogoUniPD.png Graphic file (type png)
 <use figures/LogoUniPD.png>
-Package pdftex.def Info: figures/LogoUniPD.png  used on input line 587.
+Package pdftex.def Info: figures/LogoUniPD.png  used on input line 525.
 (pdftex.def)             Requested size: 15.42284pt x 15.55528pt.
 
 Overfull \hbox (43.70723pt too wide) has occurred while \output is active
@@ -1713,469 +1690,6 @@ Overfull \hbox (43.70723pt too wide) has occurred while \output is active
  []
 
 [9
-
-]
-File: defines/figures_template/dfki-plain.pdf Graphic file (type pdf)
-<use defines/figures_template/dfki-plain.pdf>
-Package pdftex.def Info: defines/figures_template/dfki-plain.pdf  used on input line 590.
-(pdftex.def)             Requested size: 35.04692pt x 13.3331pt.
-File: defines/figures_template/top_bar_slim.png Graphic file (type png)
-<use defines/figures_template/top_bar_slim.png>
-Package pdftex.def Info: defines/figures_template/top_bar_slim.png  used on input line 590.
-(pdftex.def)             Requested size: 364.19536pt x 1.21396pt.
-File: figures/LogoUniPD.png Graphic file (type png)
-<use figures/LogoUniPD.png>
-Package pdftex.def Info: figures/LogoUniPD.png  used on input line 590.
-(pdftex.def)             Requested size: 15.42284pt x 15.55528pt.
-
-Overfull \hbox (43.70723pt too wide) has occurred while \output is active
-[]  
- []
-
-[10
-
-]
-<figures/desOpt.pdf, id=511, 69.15187pt x 90.40765pt>
-File: figures/desOpt.pdf Graphic file (type pdf)
-<use figures/desOpt.pdf>
-Package pdftex.def Info: figures/desOpt.pdf  used on input line 623.
-(pdftex.def)             Requested size: 41.45132pt x 48.35725pt.
-<figures/trajStab.pdf, id=512, 94.85437pt x 44.41594pt>
-File: figures/trajStab.pdf Graphic file (type pdf)
-<use figures/trajStab.pdf>
-Package pdftex.def Info: figures/trajStab.pdf  used on input line 623.
-(pdftex.def)             Requested size: 41.44946pt x 34.54193pt.
-<figures/trajOpt.pdf, id=513, 70.44211pt x 62.37125pt>
-File: figures/trajOpt.pdf Graphic file (type pdf)
-<use figures/trajOpt.pdf>
-Package pdftex.def Info: figures/trajOpt.pdf  used on input line 623.
-(pdftex.def)             Requested size: 41.44975pt x 41.4497pt.
-<figures/doubleArrow.pdf, id=514, 90.02054pt x 221.82874pt>
-File: figures/doubleArrow.pdf Graphic file (type pdf)
-<use figures/doubleArrow.pdf>
-Package pdftex.def Info: figures/doubleArrow.pdf  used on input line 623.
-(pdftex.def)             Requested size: 20.72626pt x 44.90652pt.
-File: figures/doubleArrow.pdf Graphic file (type pdf)
-<use figures/doubleArrow.pdf>
-Package pdftex.def Info: figures/doubleArrow.pdf  used on input line 623.
-(pdftex.def)             Requested size: 20.72626pt x 44.90652pt.
-File: defines/figures_template/dfki-plain.pdf Graphic file (type pdf)
-<use defines/figures_template/dfki-plain.pdf>
-Package pdftex.def Info: defines/figures_template/dfki-plain.pdf  used on input line 623.
-(pdftex.def)             Requested size: 35.04692pt x 13.3331pt.
-File: defines/figures_template/top_bar_slim.png Graphic file (type png)
-<use defines/figures_template/top_bar_slim.png>
-Package pdftex.def Info: defines/figures_template/top_bar_slim.png  used on input line 623.
-(pdftex.def)             Requested size: 364.19536pt x 1.21396pt.
-File: figures/LogoUniPD.png Graphic file (type png)
-<use figures/LogoUniPD.png>
-Package pdftex.def Info: figures/LogoUniPD.png  used on input line 623.
-(pdftex.def)             Requested size: 15.42284pt x 15.55528pt.
-
-Overfull \hbox (43.70723pt too wide) has occurred while \output is active
-[]  
- []
-
-[11
-
- </home/federico/Documents/Slides1stPresentation/figures/desOpt.pdf> </home/federico/Documents/Slides1stPresentation/figures/trajStab.pdf
-
-pdfTeX warning: pdflatex (file /home/federico/Documents/Slides1stPresentation/figures/trajStab.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> </home/federico/Documents/Slides1stPresentation/figures/trajOpt.pdf
-
-pdfTeX warning: pdflatex (file /home/federico/Documents/Slides1stPresentation/figures/trajOpt.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-> </home/federico/Documents/Slides1stPresentation/figures/doubleArrow.pdf
-
-pdfTeX warning: pdflatex (file /home/federico/Documents/Slides1stPresentation/figures/doubleArrow.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
-<figures/ReistSbEstMethod.png, id=555, 538.01pt x 384.43625pt>
-File: figures/ReistSbEstMethod.png Graphic file (type png)
-<use figures/ReistSbEstMethod.png>
-Package pdftex.def Info: figures/ReistSbEstMethod.png  used on input line 649.
-(pdftex.def)             Requested size: 62.16948pt x 46.62897pt.
-<figures/paraboloid.pdf, id=556, 372.17912pt x 338.14673pt>
-File: figures/paraboloid.pdf Graphic file (type pdf)
-<use figures/paraboloid.pdf>
-Package pdftex.def Info: figures/paraboloid.pdf  used on input line 649.
-(pdftex.def)             Requested size: 62.17357pt x 62.17435pt.
-File: defines/figures_template/dfki-plain.pdf Graphic file (type pdf)
-<use defines/figures_template/dfki-plain.pdf>
-Package pdftex.def Info: defines/figures_template/dfki-plain.pdf  used on input line 649.
-(pdftex.def)             Requested size: 35.04692pt x 13.3331pt.
-File: defines/figures_template/top_bar_slim.png Graphic file (type png)
-<use defines/figures_template/top_bar_slim.png>
-Package pdftex.def Info: defines/figures_template/top_bar_slim.png  used on input line 649.
-(pdftex.def)             Requested size: 364.19536pt x 1.21396pt.
-File: figures/LogoUniPD.png Graphic file (type png)
-<use figures/LogoUniPD.png>
-Package pdftex.def Info: figures/LogoUniPD.png  used on input line 649.
-(pdftex.def)             Requested size: 15.42284pt x 15.55528pt.
-
-Overfull \hbox (43.70723pt too wide) has occurred while \output is active
-[]  
- []
-
-[12
-
- </home/federico/Documents/Slides1stPresentation/figures/ReistSbEstMethod.png> </home/federico/Documents/Slides1stPresentation/figures/paraboloid.pdf>]
-File: defines/figures_template/dfki-plain.pdf Graphic file (type pdf)
-<use defines/figures_template/dfki-plain.pdf>
-Package pdftex.def Info: defines/figures_template/dfki-plain.pdf  used on input line 665.
-(pdftex.def)             Requested size: 35.04692pt x 13.3331pt.
-File: defines/figures_template/top_bar_slim.png Graphic file (type png)
-<use defines/figures_template/top_bar_slim.png>
-Package pdftex.def Info: defines/figures_template/top_bar_slim.png  used on input line 665.
-(pdftex.def)             Requested size: 364.19536pt x 1.21396pt.
-File: figures/LogoUniPD.png Graphic file (type png)
-<use figures/LogoUniPD.png>
-Package pdftex.def Info: figures/LogoUniPD.png  used on input line 665.
-(pdftex.def)             Requested size: 15.42284pt x 15.55528pt.
-
-Overfull \hbox (43.70723pt too wide) has occurred while \output is active
-[]  
- []
-
-[13
-
-]
-File: defines/figures_template/dfki-plain.pdf Graphic file (type pdf)
-<use defines/figures_template/dfki-plain.pdf>
-Package pdftex.def Info: defines/figures_template/dfki-plain.pdf  used on input line 668.
-(pdftex.def)             Requested size: 35.04692pt x 13.3331pt.
-File: defines/figures_template/top_bar_slim.png Graphic file (type png)
-<use defines/figures_template/top_bar_slim.png>
-Package pdftex.def Info: defines/figures_template/top_bar_slim.png  used on input line 668.
-(pdftex.def)             Requested size: 364.19536pt x 1.21396pt.
-File: figures/LogoUniPD.png Graphic file (type png)
-<use figures/LogoUniPD.png>
-Package pdftex.def Info: figures/LogoUniPD.png  used on input line 668.
-(pdftex.def)             Requested size: 15.42284pt x 15.55528pt.
-
-Overfull \hbox (43.70723pt too wide) has occurred while \output is active
-[]  
- []
-
-[14
-
-]
-<figures/pendulum_light_painting.jpg, id=8222, 823.3962pt x 588.2778pt>
-File: figures/pendulum_light_painting.jpg Graphic file (type jpg)
-<use figures/pendulum_light_painting.jpg>
-Package pdftex.def Info: figures/pendulum_light_painting.jpg  used on input line 688.
-(pdftex.def)             Requested size: 138.16447pt x 98.70432pt.
-<figures/pendulumParams.png, id=8223, 83.3514pt x 136.8312pt>
-File: figures/pendulumParams.png Graphic file (type png)
-<use figures/pendulumParams.png>
-Package pdftex.def Info: figures/pendulumParams.png  used on input line 688.
-(pdftex.def)             Requested size: 69.0875pt x 96.71654pt.
-File: defines/figures_template/dfki-plain.pdf Graphic file (type pdf)
-<use defines/figures_template/dfki-plain.pdf>
-Package pdftex.def Info: defines/figures_template/dfki-plain.pdf  used on input line 688.
-(pdftex.def)             Requested size: 35.04692pt x 13.3331pt.
-File: defines/figures_template/top_bar_slim.png Graphic file (type png)
-<use defines/figures_template/top_bar_slim.png>
-Package pdftex.def Info: defines/figures_template/top_bar_slim.png  used on input line 688.
-(pdftex.def)             Requested size: 364.19536pt x 1.21396pt.
-File: figures/LogoUniPD.png Graphic file (type png)
-<use figures/LogoUniPD.png>
-Package pdftex.def Info: figures/LogoUniPD.png  used on input line 688.
-(pdftex.def)             Requested size: 15.42284pt x 15.55528pt.
-
-Overfull \hbox (43.70723pt too wide) has occurred while \output is active
-[]  
- []
-
-[15
-
- </home/federico/Documents/Slides1stPresentation/figures/pendulum_light_painting.jpg> </home/federico/Documents/Slides1stPresentation/figures/pendulumParams.png>]
-File: defines/figures_template/dfki-plain.pdf Graphic file (type pdf)
-<use defines/figures_template/dfki-plain.pdf>
-Package pdftex.def Info: defines/figures_template/dfki-plain.pdf  used on input line 693.
-(pdftex.def)             Requested size: 35.04692pt x 13.3331pt.
-File: defines/figures_template/top_bar_slim.png Graphic file (type png)
-<use defines/figures_template/top_bar_slim.png>
-Package pdftex.def Info: defines/figures_template/top_bar_slim.png  used on input line 693.
-(pdftex.def)             Requested size: 364.19536pt x 1.21396pt.
-File: figures/LogoUniPD.png Graphic file (type png)
-<use figures/LogoUniPD.png>
-Package pdftex.def Info: figures/LogoUniPD.png  used on input line 693.
-(pdftex.def)             Requested size: 15.42284pt x 15.55528pt.
-
-Overfull \hbox (43.70723pt too wide) has occurred while \output is active
-[]  
- []
-
-[16
-
-]
-File: defines/figures_template/dfki-plain.pdf Graphic file (type pdf)
-<use defines/figures_template/dfki-plain.pdf>
-Package pdftex.def Info: defines/figures_template/dfki-plain.pdf  used on input line 698.
-(pdftex.def)             Requested size: 35.04692pt x 13.3331pt.
-File: defines/figures_template/top_bar_slim.png Graphic file (type png)
-<use defines/figures_template/top_bar_slim.png>
-Package pdftex.def Info: defines/figures_template/top_bar_slim.png  used on input line 698.
-(pdftex.def)             Requested size: 364.19536pt x 1.21396pt.
-File: figures/LogoUniPD.png Graphic file (type png)
-<use figures/LogoUniPD.png>
-Package pdftex.def Info: figures/LogoUniPD.png  used on input line 698.
-(pdftex.def)             Requested size: 15.42284pt x 15.55528pt.
-
-Overfull \hbox (43.70723pt too wide) has occurred while \output is active
-[]  
- []
-
-[17
-
-]
-<figures/probEllipses.png, id=8339, 776.9025pt x 828.09375pt>
-File: figures/probEllipses.png Graphic file (type png)
-<use figures/probEllipses.png>
-Package pdftex.def Info: figures/probEllipses.png  used on input line 729.
-(pdftex.def)             Requested size: 82.89894pt x 74.60103pt.
-<figures/SOSoptProblem.png, id=8340, 1229.59375pt x 404.51125pt>
-File: figures/SOSoptProblem.png Graphic file (type png)
-<use figures/SOSoptProblem.png>
-Package pdftex.def Info: figures/SOSoptProblem.png  used on input line 729.
-(pdftex.def)             Requested size: 132.62904pt x 49.73668pt.
-File: defines/figures_template/dfki-plain.pdf Graphic file (type pdf)
-<use defines/figures_template/dfki-plain.pdf>
-Package pdftex.def Info: defines/figures_template/dfki-plain.pdf  used on input line 729.
-(pdftex.def)             Requested size: 35.04692pt x 13.3331pt.
-File: defines/figures_template/top_bar_slim.png Graphic file (type png)
-<use defines/figures_template/top_bar_slim.png>
-Package pdftex.def Info: defines/figures_template/top_bar_slim.png  used on input line 729.
-(pdftex.def)             Requested size: 364.19536pt x 1.21396pt.
-File: figures/LogoUniPD.png Graphic file (type png)
-<use figures/LogoUniPD.png>
-Package pdftex.def Info: figures/LogoUniPD.png  used on input line 729.
-(pdftex.def)             Requested size: 15.42284pt x 15.55528pt.
-
-Overfull \hbox (43.70723pt too wide) has occurred while \output is active
-[]  
- []
-
-[18
-
- </home/federico/Documents/Slides1stPresentation/figures/probEllipses.png> </home/federico/Documents/Slides1stPresentation/figures/SOSoptProblem.png>]
-<figures/pendulumFunnels.pdf, id=8378, 462.52798pt x 346.89598pt>
-File: figures/pendulumFunnels.pdf Graphic file (type pdf)
-<use figures/pendulumFunnels.pdf>
-Package pdftex.def Info: figures/pendulumFunnels.pdf  used on input line 738.
-(pdftex.def)             Requested size: 172.70651pt x 172.70651pt.
-File: defines/figures_template/dfki-plain.pdf Graphic file (type pdf)
-<use defines/figures_template/dfki-plain.pdf>
-Package pdftex.def Info: defines/figures_template/dfki-plain.pdf  used on input line 738.
-(pdftex.def)             Requested size: 35.04692pt x 13.3331pt.
-File: defines/figures_template/top_bar_slim.png Graphic file (type png)
-<use defines/figures_template/top_bar_slim.png>
-Package pdftex.def Info: defines/figures_template/top_bar_slim.png  used on input line 738.
-(pdftex.def)             Requested size: 364.19536pt x 1.21396pt.
-File: figures/LogoUniPD.png Graphic file (type png)
-<use figures/LogoUniPD.png>
-Package pdftex.def Info: figures/LogoUniPD.png  used on input line 738.
-(pdftex.def)             Requested size: 15.42284pt x 15.55528pt.
-
-Overfull \hbox (43.70723pt too wide) has occurred while \output is active
-[]  
- []
-
-[19
-
- </home/federico/Documents/Slides1stPresentation/figures/pendulumFunnels.pdf>]
-<figures/pendulumVerify.pdf, id=65096, 1300.86pt x 578.16pt>
-File: figures/pendulumVerify.pdf Graphic file (type pdf)
-<use figures/pendulumVerify.pdf>
-Package pdftex.def Info: figures/pendulumVerify.pdf  used on input line 745.
-(pdftex.def)             Requested size: 310.86302pt x 138.16133pt.
-File: defines/figures_template/dfki-plain.pdf Graphic file (type pdf)
-<use defines/figures_template/dfki-plain.pdf>
-Package pdftex.def Info: defines/figures_template/dfki-plain.pdf  used on input line 745.
-(pdftex.def)             Requested size: 35.04692pt x 13.3331pt.
-File: defines/figures_template/top_bar_slim.png Graphic file (type png)
-<use defines/figures_template/top_bar_slim.png>
-Package pdftex.def Info: defines/figures_template/top_bar_slim.png  used on input line 745.
-(pdftex.def)             Requested size: 364.19536pt x 1.21396pt.
-File: figures/LogoUniPD.png Graphic file (type png)
-<use figures/LogoUniPD.png>
-Package pdftex.def Info: figures/LogoUniPD.png  used on input line 745.
-(pdftex.def)             Requested size: 15.42284pt x 15.55528pt.
-
-Overfull \hbox (43.70723pt too wide) has occurred while \output is active
-[]  
- []
-
-[20
-
- </home/federico/Documents/Slides1stPresentation/figures/pendulumVerify.pdf>]
-File: defines/figures_template/dfki-plain.pdf Graphic file (type pdf)
-<use defines/figures_template/dfki-plain.pdf>
-Package pdftex.def Info: defines/figures_template/dfki-plain.pdf  used on input line 751.
-(pdftex.def)             Requested size: 35.04692pt x 13.3331pt.
-File: defines/figures_template/top_bar_slim.png Graphic file (type png)
-<use defines/figures_template/top_bar_slim.png>
-Package pdftex.def Info: defines/figures_template/top_bar_slim.png  used on input line 751.
-(pdftex.def)             Requested size: 364.19536pt x 1.21396pt.
-File: figures/LogoUniPD.png Graphic file (type png)
-<use figures/LogoUniPD.png>
-Package pdftex.def Info: figures/LogoUniPD.png  used on input line 751.
-(pdftex.def)             Requested size: 15.42284pt x 15.55528pt.
-
-Overfull \hbox (43.70723pt too wide) has occurred while \output is active
-[]  
- []
-
-[21
-
-]
-File: defines/figures_template/dfki-plain.pdf Graphic file (type pdf)
-<use defines/figures_template/dfki-plain.pdf>
-Package pdftex.def Info: defines/figures_template/dfki-plain.pdf  used on input line 754.
-(pdftex.def)             Requested size: 35.04692pt x 13.3331pt.
-File: defines/figures_template/top_bar_slim.png Graphic file (type png)
-<use defines/figures_template/top_bar_slim.png>
-Package pdftex.def Info: defines/figures_template/top_bar_slim.png  used on input line 754.
-(pdftex.def)             Requested size: 364.19536pt x 1.21396pt.
-File: figures/LogoUniPD.png Graphic file (type png)
-<use figures/LogoUniPD.png>
-Package pdftex.def Info: figures/LogoUniPD.png  used on input line 754.
-(pdftex.def)             Requested size: 15.42284pt x 15.55528pt.
-
-Overfull \hbox (43.70723pt too wide) has occurred while \output is active
-[]  
- []
-
-[22
-
-]
-<figures/optBlocks.pdf, id=66041, 260.87474pt x 480.23517pt>
-File: figures/optBlocks.pdf Graphic file (type pdf)
-<use figures/optBlocks.pdf>
-Package pdftex.def Info: figures/optBlocks.pdf  used on input line 782.
-(pdftex.def)             Requested size: 96.7147pt x 178.04329pt.
-File: defines/figures_template/dfki-plain.pdf Graphic file (type pdf)
-<use defines/figures_template/dfki-plain.pdf>
-Package pdftex.def Info: defines/figures_template/dfki-plain.pdf  used on input line 782.
-(pdftex.def)             Requested size: 35.04692pt x 13.3331pt.
-File: defines/figures_template/top_bar_slim.png Graphic file (type png)
-<use defines/figures_template/top_bar_slim.png>
-Package pdftex.def Info: defines/figures_template/top_bar_slim.png  used on input line 782.
-(pdftex.def)             Requested size: 364.19536pt x 1.21396pt.
-File: figures/LogoUniPD.png Graphic file (type png)
-<use figures/LogoUniPD.png>
-Package pdftex.def Info: figures/LogoUniPD.png  used on input line 782.
-(pdftex.def)             Requested size: 15.42284pt x 15.55528pt.
-
-Overfull \hbox (43.70723pt too wide) has occurred while \output is active
-[]  
- []
-
-[23
-
- </home/federico/Documents/Slides1stPresentation/figures/optBlocks.pdf>]
-<figures/optCombinations.pdf, id=66077, 366.30467pt x 195.5205pt>
-File: figures/optCombinations.pdf Graphic file (type pdf)
-<use figures/optCombinations.pdf>
-Package pdftex.def Info: figures/optCombinations.pdf  used on input line 805.
-(pdftex.def)             Requested size: 172.70822pt x 92.18701pt.
-File: defines/figures_template/dfki-plain.pdf Graphic file (type pdf)
-<use defines/figures_template/dfki-plain.pdf>
-Package pdftex.def Info: defines/figures_template/dfki-plain.pdf  used on input line 805.
-(pdftex.def)             Requested size: 35.04692pt x 13.3331pt.
-File: defines/figures_template/top_bar_slim.png Graphic file (type png)
-<use defines/figures_template/top_bar_slim.png>
-Package pdftex.def Info: defines/figures_template/top_bar_slim.png  used on input line 805.
-(pdftex.def)             Requested size: 364.19536pt x 1.21396pt.
-File: figures/LogoUniPD.png Graphic file (type png)
-<use figures/LogoUniPD.png>
-Package pdftex.def Info: figures/LogoUniPD.png  used on input line 805.
-(pdftex.def)             Requested size: 15.42284pt x 15.55528pt.
-
-Overfull \hbox (43.70723pt too wide) has occurred while \output is active
-[]  
- []
-
-[24
-
- </home/federico/Documents/Slides1stPresentation/figures/optCombinations.pdf>]
-File: defines/figures_template/dfki-plain.pdf Graphic file (type pdf)
-<use defines/figures_template/dfki-plain.pdf>
-Package pdftex.def Info: defines/figures_template/dfki-plain.pdf  used on input line 810.
-(pdftex.def)             Requested size: 35.04692pt x 13.3331pt.
-File: defines/figures_template/top_bar_slim.png Graphic file (type png)
-<use defines/figures_template/top_bar_slim.png>
-Package pdftex.def Info: defines/figures_template/top_bar_slim.png  used on input line 810.
-(pdftex.def)             Requested size: 364.19536pt x 1.21396pt.
-File: figures/LogoUniPD.png Graphic file (type png)
-<use figures/LogoUniPD.png>
-Package pdftex.def Info: figures/LogoUniPD.png  used on input line 810.
-(pdftex.def)             Requested size: 15.42284pt x 15.55528pt.
-
-Overfull \hbox (43.70723pt too wide) has occurred while \output is active
-[]  
- []
-
-[25
-
-]
-File: defines/figures_template/dfki-plain.pdf Graphic file (type pdf)
-<use defines/figures_template/dfki-plain.pdf>
-Package pdftex.def Info: defines/figures_template/dfki-plain.pdf  used on input line 825.
-(pdftex.def)             Requested size: 35.04692pt x 13.3331pt.
-File: defines/figures_template/top_bar_slim.png Graphic file (type png)
-<use defines/figures_template/top_bar_slim.png>
-Package pdftex.def Info: defines/figures_template/top_bar_slim.png  used on input line 825.
-(pdftex.def)             Requested size: 364.19536pt x 1.21396pt.
-File: figures/LogoUniPD.png Graphic file (type png)
-<use figures/LogoUniPD.png>
-Package pdftex.def Info: figures/LogoUniPD.png  used on input line 825.
-(pdftex.def)             Requested size: 15.42284pt x 15.55528pt.
-
-Overfull \hbox (43.70723pt too wide) has occurred while \output is active
-[]  
- []
-
-[26
-
-]
-File: defines/figures_template/dfki-plain.pdf Graphic file (type pdf)
-<use defines/figures_template/dfki-plain.pdf>
-Package pdftex.def Info: defines/figures_template/dfki-plain.pdf  used on input line 839.
-(pdftex.def)             Requested size: 35.04692pt x 13.3331pt.
-File: defines/figures_template/top_bar_slim.png Graphic file (type png)
-<use defines/figures_template/top_bar_slim.png>
-Package pdftex.def Info: defines/figures_template/top_bar_slim.png  used on input line 839.
-(pdftex.def)             Requested size: 364.19536pt x 1.21396pt.
-File: figures/LogoUniPD.png Graphic file (type png)
-<use figures/LogoUniPD.png>
-Package pdftex.def Info: figures/LogoUniPD.png  used on input line 839.
-(pdftex.def)             Requested size: 15.42284pt x 15.55528pt.
-
-Overfull \hbox (43.70723pt too wide) has occurred while \output is active
-[]  
- []
-
-[27
-
-]
-File: defines/figures_template/dfki-plain.pdf Graphic file (type pdf)
-<use defines/figures_template/dfki-plain.pdf>
-Package pdftex.def Info: defines/figures_template/dfki-plain.pdf  used on input line 843.
-(pdftex.def)             Requested size: 35.04692pt x 13.3331pt.
-File: defines/figures_template/top_bar_slim.png Graphic file (type png)
-<use defines/figures_template/top_bar_slim.png>
-Package pdftex.def Info: defines/figures_template/top_bar_slim.png  used on input line 843.
-(pdftex.def)             Requested size: 364.19536pt x 1.21396pt.
-File: figures/LogoUniPD.png Graphic file (type png)
-<use figures/LogoUniPD.png>
-Package pdftex.def Info: figures/LogoUniPD.png  used on input line 843.
-(pdftex.def)             Requested size: 15.42284pt x 15.55528pt.
-
-Overfull \hbox (43.70723pt too wide) has occurred while \output is active
-[]  
- []
-
-[28
 
 ]
 \tf@nav=\write9
@@ -2187,30 +1701,30 @@ Overfull \hbox (43.70723pt too wide) has occurred while \output is active
 \tf@snm=\write11
 \openout11 = `main.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 847.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 847.
- (/home/federico/Documents/Slides1stPresentation/main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 847.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 847.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 529.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 529.
+ (/home/federico/Documents/journalClubDirtrel/main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 529.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 529.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 93643AEF29757052ED6D1B9C0F9C396E;318.
+(rerunfilecheck)             Checksum: 4D1A25763A049E9F51C31F12767CD733;343.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36287 strings out of 481239
- 691920 string characters out of 5920377
- 1420549 words of memory out of 5000000
- 50585 multiletter control sequences out of 15000+600000
- 588847 words of font info for 87 fonts, out of 8000000 for 9000
+ 36059 strings out of 481239
+ 687224 string characters out of 5920377
+ 1411338 words of memory out of 5000000
+ 50428 multiletter control sequences out of 15000+600000
+ 588749 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 58i,20n,67p,856b,2188s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy5.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
-Output written on /home/federico/Documents/Slides1stPresentation/main.pdf (28 pages, 10748865 bytes).
+ 58i,20n,67p,853b,2188s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy5.pfb>
+Output written on /home/federico/Documents/journalClubDirtrel/main.pdf (9 pages, 551739 bytes).
 PDF statistics:
- 66277 PDF objects out of 79402 (max. 8388607)
- 44172 compressed objects within 442 object streams
- 67 named destinations out of 1000 (max. 500000)
- 18198 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 278 PDF objects out of 1000 (max. 8388607)
+ 218 compressed objects within 3 object streams
+ 25 named destinations out of 1000 (max. 500000)
+ 18089 words of extra memory for PDF output out of 20736 (max. 10000000)
 

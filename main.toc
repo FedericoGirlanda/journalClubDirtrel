@@ -1,12 +1,12 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {english}{}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {1}{Introduction}{4}{0}{1}
+\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {2}{State of the Art and Objectives}{10}{0}{2}
+\beamer@sectionintoc {2}{Direct Transcription}{5}{0}{2}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {3}{Region of Attraction Estimation}{14}{0}{3}
+\beamer@sectionintoc {3}{Direct Transcription With Ellipsoidal Disturbances}{6}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {4}{A Robust Co-design}{22}{0}{4}
+\beamer@sectionintoc {4}{Connections to Sum-of-Squares Methods}{7}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {5}{References}{25}{0}{5}
+\beamer@sectionintoc {5}{Examples}{8}{0}{5}

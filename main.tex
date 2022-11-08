@@ -457,50 +457,17 @@
 
 
 
-\title   {Robust Co-design for Underactuated Systems}
-\subtitle {Master thesis exposé}
+\title   {Robust Direct Trajectory Optimization \\ Using Approximate Invariant Funnels}
+\subtitle {Journal Club, Team 3}
 \author   [Federico Girlanda]{BSc Federico Girlanda}
-\date     [2022-09]{September, 28th 2022}
+\date     [2022-11]{November, 16th 2022}
 \institute[DFKI Bremen]{DFKI Robotics Innovation Center Bremen}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
-% \begingroup
-% \setbeamertemplate{footline}{}
-% \frame{\titlepage
-% }
-% \endgroup
-
 \begin{frame}
  \maketitle
-\end{frame}
-
-\begin{frame}{About Me}
-\begin{columns}
-\begin{column}{\linewidth}
-\begin{block}{Background}
-\begin{minipage}{.7\linewidth}
-\begin{itemize}
-  \item Coming from: Verona, Italy
-  \item University: University of Padua
-  \item Previous studies: Bachelor degree in Electrical Engineering
-  \item Current studies: Master degree in Control Systems Engineering
-  \item 03/2022: Start of my DFKI experience
-\end{itemize}
-\end{minipage}
-\begin{minipage}{.2\linewidth}
-\raggedleft
-\includegraphics[width=0.6\linewidth, height = 0.7\linewidth]{figures/cvPhoto.jpg}
-\end{minipage}
-\end{block}
-\begin{block}{Motivational quote}
-\centering
-''I have grown a deep interest in the fields of robotics and automation during my studies.\\
-Now is the moment to put into practise all these academic knowledge!''
-\end{block}
-\end{column}
-\end{columns}
 \end{frame}
 
 % \subsection*{Table of Content}
@@ -513,330 +480,45 @@ Now is the moment to put into practise all these academic knowledge!''
 \section{Introduction}
 \separationframe{Introduction}
 
-\begin{frame}{Extreme Athletic Intelligence}
+\begin{frame}{An algorithm that reason about robustness}
 \centering
-\movie[autostart, loop, width=0.45\textwidth, height = 0.58\textwidth, showcontrols]{}{figures/boltRun.mp4}
-\movie[autostart, loop, width=0.45\textwidth, height = 0.58\textwidth, showcontrols]{}{figures/phelpsSwim.mp4}
-\end{frame}
-
-\begin{frame}{Trajectory Optimization}
+\begin{block}{Reference}
+\begin{itemize}
+\item Z. Manchester and S. Kuindersma, ''DIRTREL: Robust Trajectory Optimization with Ellipsoidal Disturbances and LQR Feedback''
+\end{itemize}
+\end{block}
 \begin{minipage}{.45\linewidth}
 \centering
-\begin{block}{Training: knowing how to run}
+\begin{block}{Contribute}
 \begin{itemize}
-\item Breath managing
-\item Keeping focus
-\item How to deal with curves
+\item In the case of ellipsoidal disturbance sets, fast evaluations of robust cost and constraint functions.   
+\item Algorithm that improves tracking performance over non-robust formulations while incurring only a modest increase in computational cost.
+\item Evaluation of the algorithm in several simulated robot control tasks.
 \end{itemize}
 \end{block}
 \end{minipage}
 \begin{minipage}{.45\linewidth}
 \centering
 \begin{figure}
-\includegraphics[width=0.6\linewidth, height=0.8\linewidth]{figures/humanRun.png}
+\includegraphics[width=0.6\linewidth, height=0.8\linewidth]{figures/trajStab.png}
 \caption{Figure 1: running man}
 \end{figure}
 \end{minipage}
 \end{frame}
 
-\begin{frame}{Design Optimization}
-\begin{minipage}{.45\linewidth}
-\centering
-\begin{block}{Physical characteristics}
-\begin{itemize}
-\item Body weight
-\item Leg length
-\item Muscles
-\end{itemize}
-\end{block}
-\end{minipage}
-\begin{minipage}{.45\linewidth}
-\centering
-\begin{figure}
-\includegraphics[width=0.6\linewidth, height=0.6\linewidth]{figures/humanDesign.jpg}
-\caption{Figure 2: human body measures}
-\end{figure}
-\end{minipage}
-\end{frame}
+\section{Direct Transcription}
+\separationframe{Direct Transcription}
 
-\begin{frame}{Trajectory Stabilization}
-\begin{minipage}{.45\linewidth}
-\centering
-\begin{block}{Non-ideal conditions}
-\begin{itemize}
-\item How to face different ground surfaces
-\item How to deal with different weather conditions
-\end{itemize}
-\end{block}
-\end{minipage}
-\begin{minipage}{.45\linewidth}
-\centering
-\begin{figure}
-\includegraphics[width=0.6\linewidth, height=0.7\linewidth]{figures/slipGround.jpg}
-\caption{Figure 3: slippery ground}
-\end{figure}
-\end{minipage}
-\end{frame}
+\section{Direct Transcription With Ellipsoidal Disturbances}
+\separationframe{Direct Transcription With Ellipsoidal Disturbances}
 
-\begin{frame}{The Optimal Interplay}
-\centering
-\begin{figure}
-\includegraphics[width=0.8\linewidth, height=0.45\linewidth]{figures/interplay.pdf}
-\caption{Figure 4: interplay between different kind of optimization}
-\end{figure}
-\end{frame}
+\section{Connections to Sum-of-Squares Methods}
+\separationframe{Connections to Sum-of-Squares Methods}
 
-\section{State of the Art and Objectives}
-\separationframe{State of the Art and Objectives}
-
-\begin{frame}{Co-design}
-\begin{minipage}{.2\linewidth}
-\centering
-\includegraphics[width=0.6\linewidth, height = 0.7\linewidth]{figures/desOpt.pdf}
-\vspace{1cm}\\
-\includegraphics[width=0.6\linewidth, height = 0.5\linewidth]{figures/trajStab.pdf}\\
-\vspace{0.8cm}
-\includegraphics[width=0.6\linewidth, height = 0.6\linewidth]{figures/trajOpt.pdf}\\
-\end{minipage}
-\begin{minipage}{.1\linewidth}
-\raggedright
-\includegraphics[width=0.6\linewidth, height = 1.3\linewidth]{figures/doubleArrow.pdf}\\
-\vspace{1cm}
-\includegraphics[width=0.6\linewidth, height = 1.3\linewidth]{figures/doubleArrow.pdf}\\
-\end{minipage}
-\begin{minipage}{.6\linewidth}
-\begin{block}{}
-\begin{itemize}
-  \item 2007: Length ratio optimization in Acrobot design $^{\left[1\right]}$
-  \item 2022: Robust co-optimization of Acrobot design and controller for up-right stabilization $^{\left[2\right]}$
-\end{itemize}
-\end{block}
-\vspace{0.5cm} 
-\begin{block}{}
-\begin{itemize}
-  \item 2017: DIRTREL, robust trajectory optimization with ellipsoidal disturbances and LQR feedback $^{\left[3\right]}$
-  \item 2020: Progress on Atlas, the world's most dynamic humanoid robot $^{\left[4\right], \left[5\right]}$
-\end{itemize}
-\end{block}
-\end{minipage}
-\vspace{0.1cm} 
-\end{frame}
-
-\begin{frame}{RoA Estimation}
-\begin{minipage}{.3\linewidth}
-\centering
-\vspace{0.3cm}
-\includegraphics[width=0.6\linewidth, height = 0.45\linewidth]{figures/ReistSbEstMethod.png}\\
-\vspace{1.4cm}
-\includegraphics[width=0.6\linewidth, height = 0.6\linewidth]{figures/paraboloid.pdf}\\
-\end{minipage}
-\begin{minipage}{.6\linewidth}
-\begin{block}{}
-\begin{itemize}
-  \item 2016: A fast sampling method for estimating the time invariant domain of attraction $^{\left[6\right]}$
-  \item 2016: Simulation-based estimation method for time varying RoA $^{\left[7\right]}$
-\end{itemize}
-\end{block}
-\vspace{0.5cm}
-\begin{block}{}
-\begin{itemize}
-  \item 2010: Time varying RoA estimation using sum-of-squares programming $^{\left[8\right]}$
-  \item 2012: Acrobot robust control design along trajectories with sums of squares programming $^{\left[9\right]}$
-  \item 2014: Robust post-stall perching with a simple fixed-wing glider using LQR-Trees $^{\left[10\right]}$
-\end{itemize}
-\end{block}
-\end{minipage}
-\end{frame}
-
-\begin{frame}{The Challenge}
-\begin{block}{Main goals}
-\begin{itemize}
-\item Time-varying RoA estimation for Acrobot with sum-of-squares programming
-\item Robust interplay between trajectory stabilization and design optimization
-\item Combined controller and design optimization for robustness along trajectories
-\end{itemize}
-\end{block}
-\begin{block}{Stretched objectives}
-\begin{itemize}
-\item Robust interplay between trajectory stabilization and trajectory optimization
-\item Full co-design algorithm for best performances and robustness
-\end{itemize}
-\end{block}
-\end{frame}
-
-\section{Region of Attraction Estimation}
-\separationframe{Region of Attraction Estimation}
-
-\begin{frame}{The Pendulum Dynamics: EOM}
-\begin{block}{State space equations}
-\begin{minipage}{.4\linewidth}
-\[x = \begin{bmatrix}\theta \\ \dot{\theta}\end{bmatrix}\]
-\end{minipage}
-\begin{minipage}{.4\linewidth}
-\[\dot{x} = \begin{bmatrix}\dot{\theta}\\ \frac{\tau_{in}}{m L^2} - \frac{g}{L} sin(\theta) - \frac{b}{m} \dot{\theta}\end{bmatrix}\]
-\end{minipage}
-\end{block}
-\begin{figure}[!h] 
-\centering
-\vspace{0.5 cm}
-\includegraphics[width=0.4\linewidth]{figures/pendulum_light_painting.jpg}
-\hspace{1 cm} 
-\includegraphics[width=0.2\linewidth, height = 0.28\linewidth]{figures/pendulumParams.png}
-\caption{Figure 5: Simple pendulum model and real system}
-\label{Pendulum parameters}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Open Loop Dynamics \& Phase Portrait}
-\centering
-\movie[autostart, loop, width=0.75\textwidth, height = 0.58\textwidth, showcontrols]{}{figures/openLoop_Pendulum.mp4}
-\end{frame}
-
-\begin{frame}{Closed Loop Dynamics \& Lyapunov Function}
-\centering
-\movie[autostart, loop, width=0.75\textwidth, height = 0.58\textwidth, showcontrols]{}{figures/RoA_Pendulum.mp4}
-\end{frame}
-
-\begin{frame}{Time-varying RoA Estimation}
-\begin{minipage}{.4\linewidth}
-\begin{block}{Time-varying features}
-\begin{itemize}
-  \item Region of Attraction = funnel
-  \item How far can the state deviate from the nominal trajectory?
-  \item More involved estimation: sampling in time, bilinear alternation, ...
-\end{itemize}
-\end{block}
-\begin{block}{Methods}
-\begin{itemize}
-  \item Simulation-based approach
-  \item Sum of squares(SOS) programming 
-\end{itemize}
-\end{block}
-\end{minipage}
-\begin{minipage}{.05\linewidth}
-\hspace{0.1 cm}
-\end{minipage}
-\begin{minipage}{.48\linewidth}
-\centering
-\begin{figure}
-\includegraphics[width=0.5\linewidth, height=0.45\linewidth]{figures/probEllipses.png}\\
-\vspace{1cm}
-\includegraphics[width=0.8\linewidth, height=0.3\linewidth]{figures/SOSoptProblem.png}
-\caption{Figure 6: RoA estimation methods}
-\label{RoA Methods}
-\end{figure}
-\end{minipage}
-\end{frame}
-
-\begin{frame}{Pendulum: Results}
-\centering
-\begin{figure}
-\includegraphics[width=0.5\linewidth, height=0.5\linewidth]{figures/pendulumFunnels.pdf}
-\caption{Figure 7: Pendulum funnels computed via simulation-based \& SOS methods}
-\label{pendulum funnel}
-\end{figure}
-\end{frame}
-
-\begin{frame}{Funnel Verification}
-\centering
-\includegraphics[width=0.9\linewidth, height=0.4\linewidth]{figures/pendulumVerify.pdf}\\
-\vspace{1 cm}
-Figure 8: Verification of the pendulum funnel computed via SOS
-\end{frame}
-
-\begin{frame}{Experimental Verification}
-\centering
-\movie[autostart, loop, width=0.45\textwidth, height = 0.58\textwidth, showcontrols]{}{figures/succInit.mp4}
-\movie[autostart, loop, width=0.45\textwidth, height = 0.58\textwidth, showcontrols]{}{figures/failingInit.mp4}
-\end{frame}
-
-\section{A Robust Co-design}
-\separationframe{A Robust Co-design}
-
-\begin{frame}{The Main Components}
-\begin{minipage}{.4\linewidth}
-\includegraphics[width=0.7\linewidth]{figures/optBlocks.pdf}
-\end{minipage}
-\begin{minipage}{.45\linewidth}
-\begin{block}{I: Robust trajectory optimization}
-\begin{itemize}
-\item Optimal trajectory to reach the goal
-\item Robustness cost function
-\item DIRTREL
-\end{itemize}
-\end{block}
-\begin{block}{II: Robust trajectory stabilization}
-\begin{itemize}
-\item Optimal controller that stabilize a given trajectory
-\item Robustness cost function
-\item TVLQR
-\end{itemize}
-\end{block}
-\begin{block}{III: Robust design optimization}
-\begin{itemize}
-\item Optimal design to achieve a desired state
-\item Robustness cost function
-\end{itemize}
-\end{block}
-\end{minipage}
-\end{frame}
-
-\begin{frame}{Multiple Possible Combinations}
-\begin{minipage}{.4\linewidth}
-\begin{block}{Robust Co-design}
-\begin{itemize}
-\item The order matters!
-\item Iterative method (i)
-\item Input variations
-\end{itemize}
-\end{block}
-\end{minipage}
-\begin{minipage}{.05\linewidth}
-\hspace{0.1 cm}
-\end{minipage}
-\begin{minipage}{.5\linewidth}
-\raggedleft
-\begin{figure}
-\includegraphics[width=1\linewidth]{figures/optCombinations.pdf}
-\caption{Figure 9: Different possible combinations in the robust co-design}
-\label{optCombinations}
-\end{figure}
-\end{minipage}
-\end{frame}
+\section{Examples}
+\separationframe{Examples}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{References}
-\separationframe{References}
-
-\begin{frame}{References}
-\centering
-\begin{minipage}{.85\linewidth}
-  \begin{enumerate}[{[1]}]
-    \item L. Yang et al., ''Kinematic Design Optimization of Acrobot''
-    \item L. Maywald et al., ''Co-optimization of Acrobot Design and Controller for Increased Certifiable Stability''
-    \item Z. Manchester and S. Kuindersma, ''DIRTREL: Robust Trajectory Optimization with Ellipsoidal Disturbances and LQR Feedback''
-    \item S. Kuindersma, F. Permenter and R. Tedrake, ''An efficiently solvable quadratic program for stabilizing dynamic locomotion''
-    \item S. Kuindersma, ''Recent progress on atlas, the world's most dynamic humanoid robot''
-    \item E. Najafi, R. Babuska and G. Lopes, ''A fast sampling method for estimating the domain of attraction''
-    \item P. Reist, P. Preiswerk and R. Tedrake, ''Feedback-motion-planning with simulation-based LQR-trees''
-  \end{enumerate}
-\end{minipage}
-\end{frame}
-
-\begin{frame}{References}
-\centering
-
-\begin{minipage}{.85\linewidth}
-  \begin{enumerate}[{[1]}]
-    \setcounter{enumi}{7}
-    \item M. Tobenkin, I. Manchester and R. Tedrake, ''Invariant Funnels around Trajectories using Sum-of-Squares Programming''
-    \item A. Majumdar, A. Ahmadi and R. Tedrake, ''Control Design along Trajectories with Sums of Squares Programming''
-    \item J. Moore, R. Cory and R. Tedrake, ''Robust post-stall perching with a simple fixed-wing glider using LQR-Trees''
-  \end{enumerate}
-\end{minipage}
-\vspace{2cm}
-\end{frame}
 
 \appendix
 
