@@ -551,13 +551,13 @@ Given a disturbance sequence $w_{1:N-1}$ we can calulate the state and input dev
 \begin{block}{Characteristics}
 \begin{itemize}
 \item Penalize deviations of the closed-loop system from the nominal trajectory in the presence of disturbances, $w_i$.
-\item Quadratic cost of the form $\delta x^T_i Q^l \delta x_i + \delta u^T_i R^l \delta u_i$, where $Q^l \geq 0$ and $R^l \geq 0$ are positive semidefinite cost matrices.
+\item Quadratic cost of the form $\delta x^T_i Q^\ell \delta x_i + \delta u^T_i R^\ell \delta u_i$, where $Q^\ell \geq 0$ and $R^\ell \geq 0$ are positive semidefinite cost matrices.
 \item Need of a well-defined disturbance sequence, $w_{1:N-1}$.
 \end{itemize}
 \end{block}
 \vspace{0.5 cm}
 Robust cost averaged over the entire disturbance set and summed along the trajectory: \\
-\[l_W(x_{1:N}, u_{1:N-1}) \approx \frac{1}{Vol(W)}\int_{W} (\delta x^T_N Q^l \delta x_N + \sum_{i=1}^{N-1} (\delta x^T_i Q^l \delta x_i + \delta u^T_i R^l \delta u_i) )\,dW\] \\
+\[\ell_W(x_{1:N}, u_{1:N-1}) \approx \frac{1}{Vol(W)}\int_{W} (\delta x^T_N Q^\ell_N \delta x_N + \sum_{i=1}^{N-1} (\delta x^T_i Q^\ell \delta x_i + \delta u^T_i R^\ell \delta u_i) )\,dW\] \\
 but this integral cannot be easily computed.
 \end{frame}
 
@@ -574,11 +574,11 @@ but this integral cannot be easily computed.
 \end{block}
 \vspace{0.5 cm}
 Thanks to the previous assumptions we can write the robust cost as: \\
-\[l_W(x_{1:N}, u_{1:N-1}) = Tr(Q_N^l E_N) + \sum_{i=1}^{N-1} Tr((Q^l + K^T_i R^l K_i)E_i)\]
+\[\ell_W(x_{1:N}, u_{1:N-1}) = Tr(Q_N^\ell E_N) + \sum_{i=1}^{N-1} Tr((Q^\ell + K^T_i R^\ell K_i)E_i)\]
 \end{frame}
 
 \begin{frame}{The DIRTREL Algorithm}
-In addition to augmenting the DIRTRAN optimization problem with $l_W (x_{1:N}, u_{1:N-1})$, we must also ensure that the closed-loop system obeys state and input constraints.
+In addition to augmenting the DIRTRAN optimization problem with $\ell_W (x_{1:N}, u_{1:N-1})$, we must also ensure that the closed-loop system obeys state and input constraints.
 \vspace{0.5 cm}
 \begin{block}{Robust state constraints}
 $x_i^W = x_i \pm col(E_i^{1/2})$
@@ -602,17 +602,18 @@ $u_i^W = u_i \pm col((K_i E_i K_i^T)^{1/2})$
 \centering
 \begin{minipage}{.45\linewidth}
 \centering
+\vspace{0.5 cm}
 \begin{figure}
-\includegraphics[width=0.8\linewidth, height=0.6\linewidth]{figures/dirtranSimDist.png}
-\caption{Figure 5: Direct Transcription nominal and simulated trajectory with disturbed dynamics}
+\includegraphics[width=0.8\linewidth, height=0.7\linewidth]{figures/trajCompManchester.png}
+\caption{Figure 5: Direct Transcription vs DIRTREL nominal trajectories from the reference paper}
 \end{figure}
 \end{minipage}
 \hspace{0.5 cm}
 \begin{minipage}{.45\linewidth}
 \centering
 \begin{figure}
-\includegraphics[width=0.83\linewidth, height=0.63\linewidth]{figures/dirtrelSimDist.png}
-\caption{Figure 6: DIRTREL nominal and simulated trajectory with disturbed dynamics}
+\includegraphics[width=0.9\linewidth, height=0.8\linewidth]{figures/DIRTRELvsDIRTRAN.pdf}
+\caption{Figure 6: Direct Transcription vs DIRTREL nominal trajectories from my implementation}
 \end{figure}
 \end{minipage}
 \end{frame}
@@ -678,9 +679,22 @@ $u_i^W = u_i \pm col((K_i E_i K_i^T)^{1/2})$
 \separationframe{Appendix}
 
 \begin{frame}{Invariant Funnels}
+\begin{figure}
+\includegraphics[width=0.8\linewidth, height=0.3\linewidth]{figures/invariantFunnel.png}
+\caption{Figure A1: Conceptual depiction of an invariant funnel around a nominal trajectory}
+\end{figure}
 \end{frame}
 
 \begin{frame}{Connections to Sum-of-Squares Methods}
+By defining \\
+\[S(w) = w^T D^{-1} w - 1 \leq 0 \quad and \quad V(t, \delta x) = \delta x^T E(t) \delta x - 1 \leq 0 \]
+we can define a robust invariant funnel by imposing \\
+\[\dot{V}(t, \delta x, w) \leq 0\]
+when $V(t, \delta x) = 0$ and for all disturbances $w \in W = \left\{w | S(w) \leq 0\right\}$
+\vspace{0.5 cm}
+\begin{block}{}
+It can be shown that imposing the SOS formulation with this notation will lead to obtain the propagation rule for E that is used to compute the robust cost in DIRTREL.
+\end{block}
 \end{frame}
 
 \end{document}
