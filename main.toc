@@ -3,10 +3,8 @@
 \defcounter {refsection}{0}\relax 
 \beamer@sectionintoc {1}{Introduction}{3}{0}{1}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {2}{Direct Transcription}{5}{0}{2}
+\beamer@sectionintoc {2}{Background}{6}{0}{2}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {3}{Direct Transcription With Ellipsoidal Disturbances}{6}{0}{3}
+\beamer@sectionintoc {3}{Direct Transcription With Ellipsoidal Disturbances}{8}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {4}{Connections to Sum-of-Squares Methods}{7}{0}{4}
-\defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {5}{Examples}{8}{0}{5}
+\beamer@sectionintoc {4}{Examples}{14}{0}{4}

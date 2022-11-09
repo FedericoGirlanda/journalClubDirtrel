@@ -487,8 +487,24 @@
 \item Z. Manchester and S. Kuindersma, ''DIRTREL: Robust Trajectory Optimization with Ellipsoidal Disturbances and LQR Feedback''
 \end{itemize}
 \end{block}
+\vspace{0.5 cm}
 \begin{minipage}{.45\linewidth}
 \centering
+\begin{figure}
+\includegraphics[width=0.4\linewidth, height=0.6\linewidth]{figures/ZMphoto.jpeg}
+\caption{Figure 1: Zachary Manchester}
+\end{figure}
+\end{minipage}
+\begin{minipage}{.45\linewidth}
+\centering
+\begin{figure}
+\includegraphics[width=0.4\linewidth, height=0.6\linewidth]{figures/SKphoto.jpeg}
+\caption{Figure 2: Scott Kuindersma}
+\end{figure}
+\end{minipage}
+\end{frame}
+
+\begin{frame}{An algorithm that reason about robustness}
 \begin{block}{Contribute}
 \begin{itemize}
 \item In the case of ellipsoidal disturbance sets, fast evaluations of robust cost and constraint functions.   
@@ -496,27 +512,162 @@
 \item Evaluation of the algorithm in several simulated robot control tasks.
 \end{itemize}
 \end{block}
-\end{minipage}
-\begin{minipage}{.45\linewidth}
-\centering
-\begin{figure}
-\includegraphics[width=0.6\linewidth, height=0.8\linewidth]{figures/trajStab.png}
-\caption{Figure 1: running man}
-\end{figure}
-\end{minipage}
 \end{frame}
 
-\section{Direct Transcription}
-\separationframe{Direct Transcription}
+\section{Background}
+\separationframe{Background}
+
+\begin{frame}{Trajectory optimization via DIRTRAN}
+\begin{block}{Characteristics}
+\begin{itemize}
+\item NLP that can be solved using SQP packages such as SNOPT.   
+\item Straight forward inclusion of state constraints and avoid numerical pitfalls such as the “tail
+wagging the dog” effect.
+\item Usually the problem size is large
+\end{itemize}
+\end{block}
+\begin{figure}
+\includegraphics[width=0.6\linewidth, height=0.25\linewidth]{figures/DIRTRANprob.png}
+\caption{Figure 3: DIRTRAN optimization problem}
+\end{figure}
+\end{frame}
 
 \section{Direct Transcription With Ellipsoidal Disturbances}
 \separationframe{Direct Transcription With Ellipsoidal Disturbances}
 
-\section{Connections to Sum-of-Squares Methods}
-\separationframe{Connections to Sum-of-Squares Methods}
+\begin{frame}{State and input deviations}
+Assume well defined $ w_i \in W $ disturbances that enter into the dynamics \\
+Hence, we can write the disturbed dynamics as \\
+\[x_{i+1} = f_h(x_i,u_i,w_i)\]
+Given a disturbance sequence $w_{1:N-1}$ we can calulate the state and input deviations from the nominal values.
+\vspace{0.5 cm}
+\begin{block}{Deviations formulation}
+\[\delta x_{i+1} = f_h(x_i + \delta x_i, u_i + \delta u_i, w_i) - x_{i+1}\]
+\[\delta u_i = -K_i \delta x_i\]
+\end{block}
+\end{frame}
+
+\begin{frame}{Robust Cost Function}
+\begin{block}{Characteristics}
+\begin{itemize}
+\item Penalize deviations of the closed-loop system from the nominal trajectory in the presence of disturbances, $w_i$.
+\item Quadratic cost of the form $\delta x^T_i Q^l \delta x_i + \delta u^T_i R^l \delta u_i$, where $Q^l \geq 0$ and $R^l \geq 0$ are positive semidefinite cost matrices.
+\item Need of a well-defined disturbance sequence, $w_{1:N-1}$.
+\end{itemize}
+\end{block}
+\vspace{0.5 cm}
+Robust cost averaged over the entire disturbance set and summed along the trajectory: \\
+\[l_W(x_{1:N}, u_{1:N-1}) \approx \frac{1}{Vol(W)}\int_{W} (\delta x^T_N Q^l \delta x_N + \sum_{i=1}^{N-1} (\delta x^T_i Q^l \delta x_i + \delta u^T_i R^l \delta u_i) )\,dW\] \\
+but this integral cannot be easily computed.
+\end{frame}
+
+\begin{frame}{Robust Cost Function}
+\begin{block}{Assumptions}
+\begin{itemize}
+\item Parametrization of the ellipsoidal set $W$ by a symmetric positive-definite matrix D, such that\\
+      \[w^T D^{-1} w \leq 1\]
+\item Parametrization of the ellipsoidal bounds on the state deviations $\delta x_i$ by a symmetric positive-definite matrix $E_i$, such that\\
+      \[\delta x_i^T E^{-1}_i \delta x_i \leq 1\]
+\item Linearization of the disturbed dynamics around the nominal trajectory: \\
+      \[\delta x_{i+1} \approx A_i \delta x_{i} + B_i \delta u_i + G_i w\]
+\end{itemize}
+\end{block}
+\vspace{0.5 cm}
+Thanks to the previous assumptions we can write the robust cost as: \\
+\[l_W(x_{1:N}, u_{1:N-1}) = Tr(Q_N^l E_N) + \sum_{i=1}^{N-1} Tr((Q^l + K^T_i R^l K_i)E_i)\]
+\end{frame}
+
+\begin{frame}{The DIRTREL Algorithm}
+In addition to augmenting the DIRTRAN optimization problem with $l_W (x_{1:N}, u_{1:N-1})$, we must also ensure that the closed-loop system obeys state and input constraints.
+\vspace{0.5 cm}
+\begin{block}{Robust state constraints}
+$x_i^W = x_i \pm col(E_i^{1/2})$
+\end{block}
+\begin{block}{Robust input constraints}
+$u_i^W = u_i \pm col((K_i E_i K_i^T)^{1/2})$
+\end{block}
+\end{frame}
+
+\begin{frame}{The DIRTREL Algorithm}
+\begin{figure}
+\includegraphics[width=0.8\linewidth, height=0.4\linewidth]{figures/DIRTRELprob.png}
+\caption{Figure 4: DIRTREL optimization problem}
+\end{figure}
+\end{frame}
 
 \section{Examples}
 \separationframe{Examples}
+
+\begin{frame}{Pendulum with Uncertain Mass}
+\centering
+\begin{minipage}{.45\linewidth}
+\centering
+\begin{figure}
+\includegraphics[width=0.8\linewidth, height=0.6\linewidth]{figures/dirtranSimDist.png}
+\caption{Figure 5: Direct Transcription nominal and simulated trajectory with disturbed dynamics}
+\end{figure}
+\end{minipage}
+\hspace{0.5 cm}
+\begin{minipage}{.45\linewidth}
+\centering
+\begin{figure}
+\includegraphics[width=0.83\linewidth, height=0.63\linewidth]{figures/dirtrelSimDist.png}
+\caption{Figure 6: DIRTREL nominal and simulated trajectory with disturbed dynamics}
+\end{figure}
+\end{minipage}
+\end{frame}
+
+\begin{frame}{Pendulum with Uncertain Mass}
+\centering
+\begin{minipage}{.45\linewidth}
+\centering
+\begin{figure}
+\includegraphics[width=0.85\linewidth, height=0.65\linewidth]{figures/rhoComparison.png}
+\caption{Figure 7: Comparison between the RoA dimension rho}
+\end{figure}
+\end{minipage}
+\hspace{0.5 cm}
+\begin{minipage}{.45\linewidth}
+\centering
+\begin{figure}
+\includegraphics[width=0.85\linewidth, height=0.65\linewidth]{figures/funnelComparison.png}
+\caption{Figure 8: Comparison between the RoA representation via funnels}
+\end{figure}
+\end{minipage}
+\end{frame}
+
+\begin{frame}{Cart Pole with Unmodeled Friction}
+\centering
+\begin{minipage}{.45\linewidth}
+\centering
+\begin{figure}
+\includegraphics[width=0.8\linewidth, height=0.7\linewidth]{figures/cartpoleSys.png}
+\caption{Figure 9: Schematic of the cart pole system}
+\end{figure}
+\end{minipage}
+\hspace{0.5 cm}
+\begin{minipage}{.45\linewidth}
+\centering
+\begin{figure}
+\includegraphics[width=0.7\linewidth, height=0.85\linewidth]{figures/cartpoleTraj.png}
+\caption{Figure 10: Resulting nominal trajectories from DIRTRAN and DIRTREL}
+\end{figure}
+\end{minipage}
+\end{frame}
+
+\begin{frame}{Quadrotor with Wind Gusts}
+\begin{figure}
+\includegraphics[width=0.7\linewidth, height=0.5\linewidth]{figures/quadrotorTraj.png}
+\caption{Figure 11: Resulting nominal trajectories from DIRTRAN and DIRTREL}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Robot Arm with Fluid-Filled Container}
+\begin{figure}
+\includegraphics[width=0.7\linewidth, height=0.5\linewidth]{figures/armTraj.png}
+\caption{Figure 12: Resulting nominal trajectories from DIRTRAN and DIRTREL}
+\end{figure}
+\end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -524,6 +675,12 @@
 
 \separationframe{Thanks for your attention}
 
-%\separationframe{Appendix}
+\separationframe{Appendix}
+
+\begin{frame}{Invariant Funnels}
+\end{frame}
+
+\begin{frame}{Connections to Sum-of-Squares Methods}
+\end{frame}
 
 \end{document}
